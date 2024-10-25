@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="17dfec5c53251210335818b0a0490e9f" label="Sample Table" max_length="40" name="x_snc_loansharks_sample_table" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Sample Table" max_length="40" name="sample_table" type="string"/>
+    </element>
+</database>
