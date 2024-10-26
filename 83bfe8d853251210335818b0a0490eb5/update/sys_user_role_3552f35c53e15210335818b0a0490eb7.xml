@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>Roles assigned to users who approve loan applications after loan officer approvals.</description>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_snc_loansharks.ls_financial_officers</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>ls_financial_officers</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-26 02:31:04</sys_created_on>
+        <sys_id>3552f35c53e15210335818b0a0490eb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_loansharks.ls_financial_officers</sys_name>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name>sys_user_role_3552f35c53e15210335818b0a0490eb7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-26 02:31:04</sys_updated_on>
+    </sys_user_role>
+</record_update>
