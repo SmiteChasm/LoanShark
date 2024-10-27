@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="c77cf0e853695210335818b0a0490e0a" sys_domain="global" table="x_snc_loansharks_ls_user_information" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-26 07:54:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>877cf0e853695210335818b0a0490e65</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_loansharks_ls_user_information" name="x_snc_loansharks_ls_user_information" sys_domain="global" view="Default view">c77cf0e853695210335818b0a0490e0a</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_loansharks_ls_user_information" sys_domain="global" view="Default view">9ed938e453695210335818b0a0490e97</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-26 07:54:15</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-26 07:54:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>837cf0e853695210335818b0a0490e66</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_loansharks_ls_user_information" name="x_snc_loansharks_ls_user_information" sys_domain="global" view="Default view">c77cf0e853695210335818b0a0490e0a</sys_ui_form>
+            <sys_ui_section caption="Address Information" display_value="Address Information" name="x_snc_loansharks_ls_user_information" sys_domain="global" view="Default view">077cf0e853695210335818b0a0490e05</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-26 07:54:15</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-26 07:54:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4b7cf0e853695210335818b0a0490e69</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_loansharks_ls_user_information" name="x_snc_loansharks_ls_user_information" sys_domain="global" view="Default view">c77cf0e853695210335818b0a0490e0a</sys_ui_form>
+            <sys_ui_section caption="Income Information" display_value="Income Information" name="x_snc_loansharks_ls_user_information" sys_domain="global" view="Default view">437cf0e853695210335818b0a0490e06</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-26 07:54:15</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-26 07:54:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>437cf0e853695210335818b0a0490e6d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_loansharks_ls_user_information" name="x_snc_loansharks_ls_user_information" sys_domain="global" view="Default view">c77cf0e853695210335818b0a0490e0a</sys_ui_form>
+            <sys_ui_section caption="Employment Description" display_value="Employment Description" name="x_snc_loansharks_ls_user_information" sys_domain="global" view="Default view">8f7cf0e853695210335818b0a0490e06</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-26 07:54:15</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-26 07:54:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5f7cf0e853695210335818b0a0490e70</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_loansharks_ls_user_information" name="x_snc_loansharks_ls_user_information" sys_domain="global" view="Default view">c77cf0e853695210335818b0a0490e0a</sys_ui_form>
+            <sys_ui_section caption="Credit Experience" display_value="Credit Experience" name="x_snc_loansharks_ls_user_information" sys_domain="global" view="Default view">cb7cf0e853695210335818b0a0490e07</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-26 07:54:15</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-26 07:54:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5f7cf0e853695210335818b0a0490e74</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_loansharks_ls_user_information" name="x_snc_loansharks_ls_user_information" sys_domain="global" view="Default view">c77cf0e853695210335818b0a0490e0a</sys_ui_form>
+            <sys_ui_section caption="Asset Declarations" display_value="Asset Declarations" name="x_snc_loansharks_ls_user_information" sys_domain="global" view="Default view">0b7cf0e853695210335818b0a0490e08</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-26 07:54:15</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-26 07:54:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>537cf0e853695210335818b0a0490e79</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_loansharks_ls_user_information" name="x_snc_loansharks_ls_user_information" sys_domain="global" view="Default view">c77cf0e853695210335818b0a0490e0a</sys_ui_form>
+            <sys_ui_section caption="Other Assets" display_value="Other Assets" name="x_snc_loansharks_ls_user_information" sys_domain="global" view="Default view">477cf0e853695210335818b0a0490e09</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-26 07:54:15</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_loansharks_ls_user_information</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-26 07:54:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c77cf0e853695210335818b0a0490e0a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_loansharks_ls_user_information</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+            <sys_update_name>sys_ui_form_sections_c77cf0e853695210335818b0a0490e0a</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-26 07:54:14</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

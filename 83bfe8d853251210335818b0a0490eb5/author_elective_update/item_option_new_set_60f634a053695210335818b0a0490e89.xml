@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set">
+    <item_option_new_set action="DELETE">
+        <create_roles/>
+        <description/>
+        <display_title>false</display_title>
+        <internal_name>user_details</internal_name>
+        <layout>normal</layout>
+        <name/>
+        <order>100</order>
+        <read_roles/>
+        <set_attributes/>
+        <sys_class_name>item_option_new_set</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-26 07:30:29</sys_created_on>
+        <sys_id>60f634a053695210335818b0a0490e89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>User Details</sys_name>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name>item_option_new_set_60f634a053695210335818b0a0490e89</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-26 07:30:29</sys_updated_on>
+        <title>User Details</title>
+        <type>one_to_one</type>
+        <version/>
+        <write_roles/>
+    </item_option_new_set>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</application>
+        <file_path/>
+        <instance_id>8ef3f303db35391038f117291396190b</instance_id>
+        <instance_name>dev186439</instance_name>
+        <name>item_option_new_set_60f634a053695210335818b0a0490e89</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set"><item_option_new_set action="INSERT_OR_UPDATE"><create_roles/><description/><display_title>false</display_title><internal_name>user_details</internal_name><layout>normal</layout><name/><order>100</order><read_roles/><set_attributes/><sys_class_name>item_option_new_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-26 07:30:29</sys_created_on><sys_id>60f634a053695210335818b0a0490e89</sys_id><sys_mod_count>0</sys_mod_count><sys_name>User Details</sys_name><sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package><sys_policy/><sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope><sys_update_name>item_option_new_set_60f634a053695210335818b0a0490e89</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-26 07:30:29</sys_updated_on><title>User Details</title><type>one_to_one</type><version/><write_roles/></item_option_new_set></record_update>]]></payload>
+        <payload_hash>-428512501</payload_hash>
+        <record_name>User Details</record_name>
+        <reverted_from/>
+        <source>5b20349c53251210335818b0a0490efc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-26 07:30:29</sys_created_on>
+        <sys_id>0307702453695210335818b0a0490ee8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192c7bbd9960000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-26 07:30:29</sys_updated_on>
+        <type>Variable Set</type>
+        <update_guid>07077024ec69521000d28cd6f7bdabe7</update_guid>
+        <update_guid_history>07077024ec69521000d28cd6f7bdabe7:-428512501</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="User Details">bd17b8e053695210335818b0a0490e96</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-26 07:30:41</sys_created_on>
+        <sys_db_object display_value="" name="item_option_new_set">item_option_new_set</sys_db_object>
+        <sys_id>1f183b6c58d04df186bbb56a0d2b3fd9</sys_id>
+        <sys_metadata>60f634a053695210335818b0a0490e89</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>User Details</sys_name>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_scope_delete display_value="">19b2888ca695464d8367833974ab8479</sys_scope_delete>
+        <sys_update_name>item_option_new_set_60f634a053695210335818b0a0490e89</sys_update_name>
+        <sys_update_version display_value="item_option_new_set_60f634a053695210335818b0a0490e89">0307702453695210335818b0a0490ee8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-26 07:30:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -4,38 +4,40 @@
         <application display_value="LoanSharks">79ef609c53251210335818b0a0490e31</application>
         <assessment/>
         <device_type/>
-        <filter/>
+        <filter table="sc_catalog">title=LoanSharks Catalog^EQ<item endquery="false" field="title" goto="false" newquery="false" operator="=" or="false" value="LoanSharks Catalog"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
         <hint/>
         <homepage/>
         <image/>
-        <link_type>LIST</link_type>
+        <link_type>DIRECT</link_type>
         <map_page/>
-        <mobile_title>LS User Informations</mobile_title>
+        <mobile_title>Catalog</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_snc_loansharks_ls_user_information</name>
-        <order>2</order>
+        <name>sc_catalog</name>
+        <order>3</order>
         <override_menu_roles>false</override_menu_roles>
-        <query/>
+        <query>./com.glideapp.servicecatalog_cat_item_view.do?sysparm_id=a235786053695210335818b0a0490e08</query>
         <report/>
         <require_confirmation>true</require_confirmation>
-        <roles>itil,x_snc_loansharks.ls_client,x_snc_loansharks.ls_financial_officers,x_snc_loansharks.ls_legal_officers,x_snc_loansharks.ls_loan_officers,x_snc_loansharks.ls_senior_officers</roles>
+        <roles/>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-10-26 01:34:31</sys_created_on>
+        <sys_created_on>2024-10-27 05:50:05</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>f895231c53a15210335818b0a0490e63</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>LS User Information</sys_name>
+        <sys_id>65f8a1705361d210335818b0a0490e9f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>LS Loan Application Form</sys_name>
         <sys_overrides/>
         <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
         <sys_policy/>
         <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
-        <sys_update_name>sys_app_module_f895231c53a15210335818b0a0490e63</sys_update_name>
+        <sys_update_name>sys_app_module_65f8a1705361d210335818b0a0490e9f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-27 04:25:26</sys_updated_on>
+        <sys_updated_on>2024-10-27 06:21:13</sys_updated_on>
         <timeline_page/>
-        <title>LS User Information</title>
+        <title>LS Loan Application Form</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

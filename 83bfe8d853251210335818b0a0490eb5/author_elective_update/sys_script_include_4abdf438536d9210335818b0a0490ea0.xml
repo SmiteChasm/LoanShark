@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_loansharks.LoanSharkClientCatalogItemSI</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>LoanSharkClientCatalogItemSI</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var LoanSharkClientCatalogItemSI = Class.create();
+LoanSharkClientCatalogItemSI.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getSysUserInfo : function () {
+
+        var userId = gs.getUserID();
+
+        var record = new GlideRecord('sys_user');
+        record.addQuery('sys_id', userId);
+        record.query();
+
+        if(record.next()){
+            var userInfo = record.getValue('sys_id');
+            gs.info("Successfully retrieved system user information for loan application catalog item");
+            return userId;
+        }
+        else{
+            gs.info("Failed retrieving system user info for loan application catalog item");
+        }
+    },
+
+    type: 'LoanSharkClientCatalogItemSI'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-27 02:39:07</sys_created_on>
+        <sys_id>4abdf438536d9210335818b0a0490ea0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>LoanSharkClientCatalogItemSI</sys_name>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name>sys_script_include_4abdf438536d9210335818b0a0490ea0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-27 03:23:56</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>4abdf438536d9210335818b0a0490ea0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-27 02:39:06</sys_created_on>
+        <sys_id>60fd3c78536d9210335818b0a0490ed4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-27 02:39:06</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</application>
+        <file_path/>
+        <instance_id>8ef3f303db35391038f117291396190b</instance_id>
+        <instance_name>dev186439</instance_name>
+        <name>sys_script_include_4abdf438536d9210335818b0a0490ea0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_snc_loansharks.LoanSharkClientCatalogItemSI&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;LoanSharkClientCatalogItemSI&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var LoanSharkClientCatalogItemSI = Class.create();
+LoanSharkClientCatalogItemSI.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getSysUserInfo : function () {
+
+        var userId = gs.getUserID();
+
+        var record = new GlideRecord('sys_user');
+        record.addQuery('sys_id', userId);
+        record.query();
+
+        if(record.next()){
+            var userInfo = record.getValue('sys_id');
+            gs.info("Successfully retrieved system user information for loan application catalog item");
+            return userId;
+        }
+        else{
+            gs.info("Failed retrieving system user info for loan application catalog item");
+        }
+    },
+
+    type: 'LoanSharkClientCatalogItemSI'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-27 02:39:07&lt;/sys_created_on&gt;&lt;sys_id&gt;4abdf438536d9210335818b0a0490ea0&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;LoanSharkClientCatalogItemSI&lt;/sys_name&gt;&lt;sys_package display_value="LoanSharks" source="x_snc_loansharks"&gt;83bfe8d853251210335818b0a0490eb5&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="LoanSharks"&gt;83bfe8d853251210335818b0a0490eb5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_4abdf438536d9210335818b0a0490ea0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-27 03:23:56&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;4abdf438536d9210335818b0a0490ea0&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-27 02:39:06&lt;/sys_created_on&gt;&lt;sys_id&gt;60fd3c78536d9210335818b0a0490ed4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-27 02:39:06&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1057403339</payload_hash>
+        <record_name>LoanSharkClientCatalogItemSI</record_name>
+        <reverted_from/>
+        <source>5b20349c53251210335818b0a0490efc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-27 03:23:56</sys_created_on>
+        <sys_id>5938497453ad9210335818b0a0490e8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192cc007a900000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-27 03:23:56</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>1138497422ad92100fdd231cd2bad58f</update_guid>
+        <update_guid_history>1138497422ad92100fdd231cd2bad58f:-1057403339,b9564934c1ad9210e6e003122228a30f:-1130260898,d1364134a0ad92103343da03957f8eff:-86148978,1506413470ad9210c67d6376671fb6f9:-1663989135,e35e74b8786d9210720afe22cc9d70c6:-1130260898,b4fdbc78fa6d92107a5a0c089a8c7a5b:907194554</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-27 03:30:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>20dfe73ca8c840f885bfffa8cbffcc40</sys_id>
+        <sys_metadata>4abdf438536d9210335818b0a0490ea0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LoanSharkClientCatalogItemSI</sys_name>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_scope_delete display_value="">19b2888ca695464d8367833974ab8479</sys_scope_delete>
+        <sys_update_name>sys_script_include_4abdf438536d9210335818b0a0490ea0</sys_update_name>
+        <sys_update_version display_value="sys_script_include_4abdf438536d9210335818b0a0490ea0">5938497453ad9210335818b0a0490e8f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-27 03:30:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
