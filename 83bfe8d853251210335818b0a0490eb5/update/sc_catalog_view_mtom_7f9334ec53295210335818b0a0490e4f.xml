@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_catalog_view_mtom">
+    <sc_catalog_view_mtom action="INSERT_OR_UPDATE">
+        <default>true</default>
+        <sc_catalog display_value="LoanSharks Catalog">6b73306c53295210335818b0a0490e55</sc_catalog>
+        <sys_class_name>sc_catalog_view_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-26 07:15:31</sys_created_on>
+        <sys_id>7f9334ec53295210335818b0a0490e4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LoanSharks Catalog.catalog_loansharks_catalog</sys_name>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_portal_page display_value="catalog_loansharks_catalog">739330ec53295210335818b0a0490e6b</sys_portal_page>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name>sc_catalog_view_mtom_7f9334ec53295210335818b0a0490e4f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-26 07:15:31</sys_updated_on>
+    </sc_catalog_view_mtom>
+</record_update>
