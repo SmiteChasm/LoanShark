@@ -1,0 +1,1241 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Flow that handles loan application rejection and approvals of LoanShark Custom Application</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>loan_application</internal_name>
+        <label_cache>[{"name":"flow_variable.other_user_information","label":"Flow Variables➛Other User Information","reference":"x_snc_loansharks_ls_user_information","reference_display":"LS User Information","type":"reference","base_type":"reference","column_name":"","usedInstances":{"cffe12b5-aad9-4681-9579-4e792459864a":["other_user_information"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c5d20cb1-c5b5-4d60-953a-2c1fe6b1a93b"}},{"name":"flow_variable.user_information","label":"Flow Variables➛User Information","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","column_name":"","usedInstances":{"cffe12b5-aad9-4681-9579-4e792459864a":["user_information"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8409cec0-ae49-48d8-bd56-66c67f54e1aa"}},{"name":"flow_variable.user_information.sys_id","label":"Flow Variables➛User Information➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id","usedInstances":{"cffe12b5-aad9-4681-9579-4e792459864a":["user_information"]}},{"name":"flow_variable.other_user_information.sys_id","label":"Flow Variables➛Other User Information➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_loansharks_ls_user_information","column_name":"sys_id","usedInstances":{"cffe12b5-aad9-4681-9579-4e792459864a":["other_user_information"]}},{"name":"flow_variable.loan_amount","label":"Flow Variables➛Loan Amount","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"cffe12b5-aad9-4681-9579-4e792459864a":["loan_amount"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7408a2b3-d7a6-4d07-a52e-4315dda9c6f4"}},{"name":"flow_variable.loan_term","label":"Flow Variables➛Loan Term","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"cffe12b5-aad9-4681-9579-4e792459864a":["loan_term"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"28b02de2-d334-45d1-a8cf-b3458db3cd25"}},{"name":"flow_variable.loan_type","label":"Flow Variables➛Loan Type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"cffe12b5-aad9-4681-9579-4e792459864a":["loan_type"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4cb6f8a7-a379-4269-885e-565d78a7cc27"}},{"name":"flow_variable.credit_score","label":"Flow Variables➛Credit Score","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"cffe12b5-aad9-4681-9579-4e792459864a":["credit_score"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ddc3d1d5-b483-4a85-a1a7-1825ebd5a005"}},{"name":"flow_variable.loan_criteria","label":"Flow Variables➛Loan Criteria","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"cffe12b5-aad9-4681-9579-4e792459864a":["system_criteria"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"fb4b75b9-da38-410b-8a8e-ba5e5c8e689c"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Loan Application</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-27 11:15:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4814be3053e5d210335818b0a0490e3b</sys_id>
+        <sys_mod_count>68</sys_mod_count>
+        <sys_name>Loan Application</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name>sys_hub_flow_4814be3053e5d210335818b0a0490e3b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-28 09:07:15</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=4814be3053e5d210335818b0a0490e3b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4814be3053e5d210335818b0a0490e3b"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=4814be3053e5d210335818b0a0490e3b"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=4814be3053e5d210335818b0a0490e3b^sys_idNOT IN0014be3053e5d210335818b0a0490e3e"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>4814be3053e5d210335818b0a0490e3b</id>
+        <name>Loan Application</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-27 11:15:10</sys_created_on>
+        <sys_id>0014be3053e5d210335818b0a0490e3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-27 11:15:10</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=0014be3053e5d210335818b0a0490e3e"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=4814be3053e5d210335818b0a0490e3b^sys_idNOT IN7754feb053e5d210335818b0a0490ec6,b7543ef053e5d210335818b0a0490e46,bf54feb053e5d210335818b0a0490ec0"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">178d9a8f65d012104f340572a9474038</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Loan Application">4814be3053e5d210335818b0a0490e3b</model>
+        <model_id>4814be3053e5d210335818b0a0490e3b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_4814be3053e5d210335818b0a0490e3b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-27 11:16:31</sys_created_on>
+        <sys_id>7754feb053e5d210335818b0a0490ec6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-27 11:16:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7754feb053e5d210335818b0a0490ec6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Loan Application">4814be3053e5d210335818b0a0490e3b</model>
+        <model_id>4814be3053e5d210335818b0a0490e3b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_4814be3053e5d210335818b0a0490e3b</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-27 11:16:31</sys_created_on>
+        <sys_id>b7543ef053e5d210335818b0a0490e46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-27 11:16:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b7543ef053e5d210335818b0a0490e46"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Loan Application">4814be3053e5d210335818b0a0490e3b</model>
+        <model_id>4814be3053e5d210335818b0a0490e3b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_4814be3053e5d210335818b0a0490e3b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-27 11:16:30</sys_created_on>
+        <sys_id>bf54feb053e5d210335818b0a0490ec0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-27 11:16:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bf54feb053e5d210335818b0a0490ec0"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=4814be3053e5d210335818b0a0490e3b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4814be3053e5d210335818b0a0490e3b"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=4814be3053e5d210335818b0a0490e3b^sys_idNOT INbf543ef053e5d210335818b0a0490e4b"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Loan Application">4814be3053e5d210335818b0a0490e3b</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-27 11:16:31</sys_created_on>
+        <sys_id>bf543ef053e5d210335818b0a0490e4b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-27 12:12:54</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=4814be3053e5d210335818b0a0490e3b^sys_idNOT IN3941c3345329d210335818b0a0490ecc"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Loan Application">4814be3053e5d210335818b0a0490e3b</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-27 12:12:54</sys_created_on>
+        <sys_id>3941c3345329d210335818b0a0490ecc</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-28 09:07:15</sys_updated_on>
+        <ui_id>cffe12b5-aad9-4681-9579-4e792459864a</ui_id>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4XOhuEmTTPkNmDIaWuBreil6wRaohNhsuRJcpos8H8f5Y8syNIsG7qedovJRz7yUWQetkxJNmOj6WQ6ARxNxvl4NM6y8ZW4lhKxKKb55ai4YgkzUCIhA+QaefuRsBXoOhrX3BvBtQXjl+C++vYnh6rSSkBQ1hBWKl9p2Nz/QYhYKi0dGjZ7eExYBY5YAzo22x64wqZCriFHTZnvYoUXN12F53Z3NPhYy5Hq0GadjFVlCcN1QCORSAvQHhNWgpEQrNuwWXA1GRyCvDV6s0MslQmUkEXs2qvvlP1NFnEFUn8CO59YWiXwtmqVaS1tBb3T6ro0N121UWosoNZhkJostUcusYq1Rbaeuvi0tE8fB6K5Mm0bvVNbAXr3BSE4ldcBfVS/VndHZOis73slY7tkRI0lcfKSRqvMglfOrlTLQ2WX6ULTR1po+0T1ebUwKYjYY0qqQTon+7vWfA9ORa4PlIaCm1Yg/q2OJXYt983xTh8CeOFUFd5SuhX2fTTJ8N7zky8Cfg6/UKil33vrJKXjyhTWle07/VxTuNxu2x5WfZnpIappvtiwJNt54cexlKTbktLWJhyP3AMMcFqZ8gQ4undQGuApKLkJKhxKFbgX1j2D3kdQgN/4gCWngRCZghMMA6Rpfj0Z/5V/NeX/8vJiSfMKeNFNLDl714YE82HZDpdvuLo9AV/1BP3lvXypy3s9ybJ/fXy7al7g9h6K8Yr3l8gqWpHAO/RA97uzvPd38cyBfvwB61FNKZIIAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=4814be3053e5d210335818b0a0490e3b"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=4814be3053e5d210335818b0a0490e3b^sys_idNOT IN7941c3345329d210335818b0a0490ecb"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">3d41c3345329d210335818b0a0490eca</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Loan Application">4814be3053e5d210335818b0a0490e3b</flow>
+        <flow_variables_assigned>other_user_information,user_information,loan_type,loan_amount,loan_term,credit_score,loan_criteria</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-27 12:12:54</sys_created_on>
+        <sys_id>7941c3345329d210335818b0a0490ecb</sys_id>
+        <sys_mod_count>71</sys_mod_count>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-28 09:07:15</sys_updated_on>
+        <ui_id>de82b100-4182-40e6-910e-e495f6a924c3</ui_id>
+        <values>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</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=4814be3053e5d210335818b0a0490e3b"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=4814be3053e5d210335818b0a0490e3b^sys_idNOT IN12ed71cd53a51610335818b0a0490ed7,16ed71cd53a51610335818b0a0490eda,1eed71cd53a51610335818b0a0490ed3,29b2d24953291610335818b0a0490ea3,65b2d24953291610335818b0a0490e9c,7141c3345329d210335818b0a0490ec0,92ed71cd53a51610335818b0a0490ed0,934f534d53ad1610335818b0a0490e30,f541c3345329d210335818b0a0490ec5"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=28b02de2-d334-45d1-a8cf-b3458db3cd25</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>loan_term</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Loan Term</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Loan Application">4814be3053e5d210335818b0a0490e3b</model>
+        <model_id>4814be3053e5d210335818b0a0490e3b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_4814be3053e5d210335818b0a0490e3b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-28 01:57:03</sys_created_on>
+        <sys_id>12ed71cd53a51610335818b0a0490ed7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-28 01:57:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=76f7ab93-a03d-49a8-b171-0f10ccb9efe0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>attachments</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Attachments</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Loan Application">4814be3053e5d210335818b0a0490e3b</model>
+        <model_id>4814be3053e5d210335818b0a0490e3b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_4814be3053e5d210335818b0a0490e3b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-28 01:57:03</sys_created_on>
+        <sys_id>16ed71cd53a51610335818b0a0490eda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-28 01:57:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=7408a2b3-d7a6-4d07-a52e-4315dda9c6f4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>loan_amount</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Loan Amount</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Loan Application">4814be3053e5d210335818b0a0490e3b</model>
+        <model_id>4814be3053e5d210335818b0a0490e3b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_4814be3053e5d210335818b0a0490e3b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-28 01:57:03</sys_created_on>
+        <sys_id>1eed71cd53a51610335818b0a0490ed3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-28 01:57:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=125d5e0d-b3e9-4341-b4f9-f1e7bafb2b46</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>income_range</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Income Range</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Loan Application">4814be3053e5d210335818b0a0490e3b</model>
+        <model_id>4814be3053e5d210335818b0a0490e3b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_4814be3053e5d210335818b0a0490e3b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-28 03:27:56</sys_created_on>
+        <sys_id>29b2d24953291610335818b0a0490ea3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-28 03:27:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=ddc3d1d5-b483-4a85-a1a7-1825ebd5a005</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>credit_score</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Credit Score</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Loan Application">4814be3053e5d210335818b0a0490e3b</model>
+        <model_id>4814be3053e5d210335818b0a0490e3b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_4814be3053e5d210335818b0a0490e3b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-28 03:27:56</sys_created_on>
+        <sys_id>65b2d24953291610335818b0a0490e9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-28 03:27:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=8409cec0-ae49-48d8-bd56-66c67f54e1aa</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_user</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>user_information</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>User Information</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Loan Application">4814be3053e5d210335818b0a0490e3b</model>
+        <model_id>4814be3053e5d210335818b0a0490e3b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_4814be3053e5d210335818b0a0490e3b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-27 12:12:54</sys_created_on>
+        <sys_id>7141c3345329d210335818b0a0490ec0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-27 12:12:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4cb6f8a7-a379-4269-885e-565d78a7cc27</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>loan_type</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Loan Type</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Loan Application">4814be3053e5d210335818b0a0490e3b</model>
+        <model_id>4814be3053e5d210335818b0a0490e3b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_4814be3053e5d210335818b0a0490e3b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-28 01:57:03</sys_created_on>
+        <sys_id>92ed71cd53a51610335818b0a0490ed0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-28 01:57:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=fb4b75b9-da38-410b-8a8e-ba5e5c8e689c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>loan_criteria</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Loan Criteria</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Loan Application">4814be3053e5d210335818b0a0490e3b</model>
+        <model_id>4814be3053e5d210335818b0a0490e3b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_4814be3053e5d210335818b0a0490e3b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-28 09:02:33</sys_created_on>
+        <sys_id>934f534d53ad1610335818b0a0490e30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-28 09:02:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=c5d20cb1-c5b5-4d60-953a-2c1fe6b1a93b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_loansharks_ls_user_information</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>other_user_information</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Other User Information</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Loan Application">4814be3053e5d210335818b0a0490e3b</model>
+        <model_id>4814be3053e5d210335818b0a0490e3b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_4814be3053e5d210335818b0a0490e3b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_loansharks_ls_user_information">x_snc_loansharks_ls_user_information</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-27 12:12:54</sys_created_on>
+        <sys_id>f541c3345329d210335818b0a0490ec5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-27 12:12:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_4814be3053e5d210335818b0a0490e3b^sys_idNOT IN3354feb053e5d210335818b0a0490ec5,fb543ef053e5d210335818b0a0490e48,ff54feb053e5d210335818b0a0490ec8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4814be3053e5d210335818b0a0490e3b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-27 11:16:31</sys_created_on>
+        <sys_id>3354feb053e5d210335818b0a0490ec5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-27 11:16:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4814be3053e5d210335818b0a0490e3b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-27 11:16:31</sys_created_on>
+        <sys_id>fb543ef053e5d210335818b0a0490e48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-27 11:16:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4814be3053e5d210335818b0a0490e3b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-27 11:16:31</sys_created_on>
+        <sys_id>ff54feb053e5d210335818b0a0490ec8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-27 11:16:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_4814be3053e5d210335818b0a0490e3b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_4814be3053e5d210335818b0a0490e3b"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_4814be3053e5d210335818b0a0490e3b"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=4814be3053e5d210335818b0a0490e3b"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=4814be3053e5d210335818b0a0490e3b"/>
+</record_update>
