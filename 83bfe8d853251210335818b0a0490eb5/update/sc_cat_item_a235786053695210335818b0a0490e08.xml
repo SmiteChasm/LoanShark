@@ -8,14 +8,14 @@
         <checked_out>false</checked_out>
         <cost>0</cost>
         <custom_cart/>
-        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan/>
         <delivery_plan_script/>
         <delivery_time>1970-01-03 00:00:00</delivery_time>
         <description><![CDATA[<p>Please fill out every field of the form and attach required documentary proof such as: </p>
 <ol style="list-style-position: inside;"><li> Government Valid ID</li><li> Company ID</li><li> Pay slip or other proof of income</li><li> Proof of Residence (Electric Bill/Water Bill, Internet  Bill)</li></ol>]]></description>
         <display_price_property>non_zero</display_price_property>
         <entitlement_script/>
-        <flow_designer_flow/>
+        <flow_designer_flow display_value="Loan Application V2">d9bc1c6953659610335818b0a0490e40</flow_designer_flow>
         <fulfillment_automation_level>unspecified</fulfillment_automation_level>
         <group/>
         <hide_sp>false</hide_sp>
@@ -67,21 +67,21 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-26 07:23:07</sys_created_on>
         <sys_id>a235786053695210335818b0a0490e08</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>59</sys_mod_count>
         <sys_name>Loan Application</sys_name>
         <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
         <sys_policy/>
         <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
         <sys_update_name>sc_cat_item_a235786053695210335818b0a0490e08</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-10-27 10:32:30</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-29 11:42:51</sys_updated_on>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>57</version>
+        <version>58</version>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>
