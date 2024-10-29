@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="system_criteria" label="System Criteria" language="en" table="x_snc_loansharks_loan_application">
+    <sys_documentation element="system_criteria" label="Loan Criteria Evaluation" language="en" table="x_snc_loansharks_loan_application">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>system_criteria</element>
             <help/>
             <hint/>
-            <label>System Criteria</label>
+            <label>Loan Criteria Evaluation</label>
             <language>en</language>
             <name>x_snc_loansharks_loan_application</name>
-            <plural>System Criterias</plural>
+            <plural>Loan Criteria Evaluations</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2024-10-28 08:02:07</sys_created_on>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_name>System Criteria</sys_name>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Loan Criteria Evaluation</sys_name>
             <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
             <sys_policy/>
             <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
             <sys_update_name>sys_documentation_x_snc_loansharks_loan_application_system_criteria_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-28 08:19:04</sys_updated_on>
+            <sys_updated_on>2024-10-29 11:07:51</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
