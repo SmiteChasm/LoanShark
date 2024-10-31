@@ -6,11 +6,11 @@
         <advanced_condition/>
         <affected_field_on_event/>
         <category display_value="LoanShark Notifications" name="LoanShark Notifications">ee81001953615610335818b0a0490ecc</category>
-        <collection>x_snc_loansharks_loan_application</collection>
+        <collection>sc_task</collection>
         <condition/>
         <content_type>text/html</content_type>
         <default_interval/>
-        <description>Notification received by the loan applicant indicating their loan application failed in the loan criteria evaluation.</description>
+        <description>Notification legal approvers and other approvers will receive when legal officer approves loan application.</description>
         <digest_from/>
         <digest_html/>
         <digest_reply_to/>
@@ -36,47 +36,39 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>Dear ${user_information.first_name} ${user_information.last_name},</p>
-<p>Thank you for your loan application with LoanShark. We regret to inform you that, after a thorough review, your application did not meet our criteria for approval at this stage.</p>
-<h3>Application Summary</h3>
-<ul style="list-style-position: inside;">
-<li>Application ID: ${number}</li>
-<li>Loan Amount: ${loan_amount}</li>
-<li>Application Date: ${sys_created_on}</li>
-</ul>
-<p>If you would like more information regarding this decision or assistance with your future applications, please feel free to reach out to our support team.</p>
-<p>We value your interest in our services and encourage you to apply again in the future.</p>
-<p>Best regards,</p>]]></message_html>
+        <message_html><![CDATA[<p>We are pleased to inform all concerned parties that the loan application for catalog task number Number: ${number} of the Parent: ${parent} has been successfully <span style="color: rgb(45, 194, 107);"><strong>APPROVED&nbsp;</strong></span>by our <span style="color: rgb(45, 194, 107);"><strong><span style="color: rgb(0, 0, 0);">Legal Officers</span> </strong></span>Thank you for the prompt review and decision-making in this process.</p>
+<p>The approval has been logged in the system, and the next steps are now underway. If there are any further actions required, you will be notified promptly.</p>
+<p>Thank you for your continued support and dedication to ensuring efficient loan processing.</p>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>Failed Loan Criteria</name>
+        <name>LA Passing Loan Application</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields>user_information</recipient_fields>
+        <recipient_fields>assignment_group</recipient_fields>
         <recipient_groups/>
         <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>FAILED IN LOAN CRITERIA</subject>
+        <subject>SUCCESSFUL APPROVAL OF LOAN APPLICATION BY LEGAL OFFICERS</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-10-28 11:58:28</sys_created_on>
+        <sys_created_on>2024-10-31 01:19:38</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>6ca6089d53615610335818b0a0490e42</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Failed Loan Criteria</sys_name>
+        <sys_id>cb915d4e53e15a10335818b0a0490ea7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>LA Passing Loan Application</sys_name>
         <sys_overrides/>
         <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
         <sys_policy/>
         <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
-        <sys_update_name>sysevent_email_action_6ca6089d53615610335818b0a0490e42</sys_update_name>
+        <sys_update_name>sysevent_email_action_cb915d4e53e15a10335818b0a0490ea7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-30 03:37:53</sys_updated_on>
+        <sys_updated_on>2024-10-31 01:20:31</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Employee notification template">1462e7ca918a3010f877b1d70a4d6a3d</template>
         <type>email</type>
