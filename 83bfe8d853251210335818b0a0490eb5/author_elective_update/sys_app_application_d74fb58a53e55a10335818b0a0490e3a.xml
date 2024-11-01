@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>Loan Disbursement</name>
+        <order>100</order>
+        <roles>x_snc_loansharks.loan_disbursement_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-31 04:37:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d74fb58a53e55a10335818b0a0490e3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Loan Disbursement</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name>sys_app_application_d74fb58a53e55a10335818b0a0490e3a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-31 04:37:03</sys_updated_on>
+        <title>Loan Disbursement</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</application>
+        <file_path/>
+        <instance_id>8ef3f303db35391038f117291396190b</instance_id>
+        <instance_name>dev186439</instance_name>
+        <name>sys_app_application_d74fb58a53e55a10335818b0a0490e3a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>Loan Disbursement</name><order>100</order><roles>x_snc_loansharks.loan_disbursement_user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-31 04:37:03</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d74fb58a53e55a10335818b0a0490e3a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Loan Disbursement</sys_name><sys_overrides/><sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package><sys_policy/><sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope><sys_update_name>sys_app_application_d74fb58a53e55a10335818b0a0490e3a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-31 04:37:03</sys_updated_on><title>Loan Disbursement</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>209857139</payload_hash>
+        <record_name>Loan Disbursement</record_name>
+        <reverted_from/>
+        <source>5b20349c53251210335818b0a0490efc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-31 04:37:03</sys_created_on>
+        <sys_id>134fb58a53e55a10335818b0a0490e3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192e0dcdb5c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-31 04:37:03</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>d34fb58a03e55a10a8d72e0c1c138b3d</update_guid>
+        <update_guid_history>d34fb58a03e55a10a8d72e0c1c138b3d:209857139</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Loan Disbursement">0c300eca53e55a10335818b0a0490e7f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-31 04:40:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>03d3db899f2c4e6f814382ac94e0dd79</sys_id>
+        <sys_metadata>d74fb58a53e55a10335818b0a0490e3a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Loan Disbursement</sys_name>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_scope_delete display_value="">19b2888ca695464d8367833974ab8479</sys_scope_delete>
+        <sys_update_name>sys_app_application_d74fb58a53e55a10335818b0a0490e3a</sys_update_name>
+        <sys_update_version display_value="sys_app_application_d74fb58a53e55a10335818b0a0490e3a">134fb58a53e55a10335818b0a0490e3e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-31 04:40:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

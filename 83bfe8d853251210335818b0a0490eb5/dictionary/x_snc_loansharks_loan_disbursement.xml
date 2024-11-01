@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="06de7d4a53e55a10335818b0a0490e15" label="Loan Disbursement" max_length="40" name="x_snc_loansharks_loan_disbursement" type="collection">
+        <element label="Request Item" max_length="32" name="request_item" reference="sc_req_item" type="reference"/>
+        <element label="Request" max_length="32" name="request" reference="sc_request" type="reference"/>
+        <element label="Loan Application" max_length="40" name="loan_application" reference="x_snc_loansharks_loan_application" type="reference"/>
+        <element label="Disbursed Amount" max_length="40" name="disbursed_amount" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Disbursed By" max_length="40" name="disbursed_by" reference="sys_user_group" type="reference"/>
+        <index name="index">
+            <element name="request"/>
+        </index>
+        <index name="index2">
+            <element name="request_item"/>
+        </index>
+    </element>
+</database>
