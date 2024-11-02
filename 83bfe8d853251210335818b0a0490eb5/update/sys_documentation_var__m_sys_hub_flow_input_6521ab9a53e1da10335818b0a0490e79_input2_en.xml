@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="input2" label="3_create_record_record" language="en" table="var__m_sys_hub_flow_input_6521ab9a53e1da10335818b0a0490e79">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>input2</element>
+            <help/>
+            <hint/>
+            <label>3_create_record_record</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_6521ab9a53e1da10335818b0a0490e79</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-01 06:23:02</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>3_create_record_record</sys_name>
+            <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_6521ab9a53e1da10335818b0a0490e79_input2_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-01 06:23:02</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

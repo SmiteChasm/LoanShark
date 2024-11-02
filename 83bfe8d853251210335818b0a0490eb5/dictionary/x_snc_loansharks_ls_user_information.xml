@@ -2,84 +2,84 @@
     <element db_object_id="37ed535053a15210335818b0a0490e5b" label="LS User Information" max_length="40" name="x_snc_loansharks_ls_user_information" type="collection">
         <element choice="1" label="Water Connection" max_length="40" name="water_connection" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Dependant (Owned by Relative)" value="3"/>
-                <element inactive_on_update="false" label="Rental" value="1"/>
                 <element inactive_on_update="false" label="Owned" value="2"/>
-            </choice>
-        </element>
-        <element display="true" label="System User" max_length="32" name="system_user" reference="sys_user" type="reference"/>
-        <element label="Contact Number" max_length="15" name="contact_number" type="string"/>
-        <element choice="1" label="Land Ownership" max_length="40" name="land_ownership" type="choice">
-            <choice>
                 <element inactive_on_update="false" label="Dependant (Owned by Relative)" value="3"/>
-                <element inactive_on_update="false" label="Owned" value="2"/>
                 <element inactive_on_update="false" label="Rental" value="1"/>
             </choice>
         </element>
         <element choice="1" label="Employment Status" max_length="40" name="employment_status" type="choice">
             <choice>
+                <element inactive_on_update="false" label="Self-Employed (Freelance)" value="4"/>
+                <element inactive_on_update="false" label="Employed (Part Time)" value="2"/>
+                <element inactive_on_update="false" label="Unemployed" value="5"/>
                 <element inactive_on_update="false" label="Self-Employed (Entrepreneur)" value="3"/>
                 <element inactive_on_update="false" label="Employed (Full Time)" value="1"/>
-                <element inactive_on_update="false" label="Unemployed" value="5"/>
-                <element inactive_on_update="false" label="Employed (Part Time)" value="2"/>
-                <element inactive_on_update="false" label="Self-Employed (Freelance)" value="4"/>
             </choice>
         </element>
-        <element label="Birth Date" max_length="40" name="birth_date" type="glide_date"/>
-        <element label="Laptops" max_length="40" name="laptops" type="boolean"/>
-        <element label="Number of Active Loans" max_length="40" name="number_of_active_loans" type="integer"/>
+        <element choice="1" label="House Ownership" max_length="40" name="house_ownership" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Dependant (Owned by Relative)" value="3"/>
+                <element inactive_on_update="false" label="Rental" value="1"/>
+                <element inactive_on_update="false" label="Owned" value="2"/>
+            </choice>
+        </element>
         <element label="City/Municipality" max_length="50" name="city_municipality" type="string"/>
-        <element label="Company Name" max_length="50" name="company_name" type="string"/>
-        <element label="Smart Phones" max_length="40" name="smart_phones" type="boolean"/>
-        <element label="Barangay" max_length="50" name="barangay" type="string"/>
         <element label="Number of Closed Loans" max_length="40" name="number_of_closed_loans" type="integer"/>
-        <element label="Province" max_length="50" name="province" type="string"/>
-        <element label="Region" max_length="50" name="region" type="string"/>
-        <element label="Number of Loans Participated" max_length="40" name="number_of_loans_participated" type="integer"/>
         <element choice="1" label="Internet Connection" max_length="40" name="internet_connection" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Rental" value="1"/>
                 <element inactive_on_update="false" label="Dependant (Owned by Relative)" value="3"/>
+                <element inactive_on_update="false" label="Rental" value="1"/>
                 <element inactive_on_update="false" label="Owned" value="2"/>
             </choice>
         </element>
-        <element choice="1" label="Electricity Connection" max_length="40" name="electricity_connection" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Owned" value="2"/>
-                <element inactive_on_update="false" label="Dependant (Owned by Relative)" value="3"/>
-                <element inactive_on_update="false" label="Rental" value="1"/>
-            </choice>
-        </element>
-        <element label="Smart TVs" max_length="40" name="smart_tvs" type="boolean"/>
-        <element label="Middle Name" max_length="50" name="middle_name" type="string"/>
-        <element label="User Name" max_length="50" name="user_name" type="string"/>
         <element choice="1" label="Income Range" max_length="40" name="income_range" type="choice">
             <choice>
-                <element inactive_on_update="false" label="10,000 - 20,000" sequence="4" value="4"/>
-                <element inactive_on_update="false" label="20,000 - 50,000" sequence="3" value="3"/>
-                <element inactive_on_update="false" label="10,000 - Below" sequence="5" value="5"/>
                 <element inactive_on_update="false" label="50,000 - 100,000" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="10,000 - 20,000" sequence="4" value="4"/>
                 <element inactive_on_update="false" label="100,000 - Above" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="10,000 - Below" sequence="5" value="5"/>
+                <element inactive_on_update="false" label="20,000 - 50,000" sequence="3" value="3"/>
+            </choice>
+        </element>
+        <element display="true" label="System User" max_length="32" name="system_user" reference="sys_user" type="reference"/>
+        <element choice="1" label="Electricity Connection" max_length="40" name="electricity_connection" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Rental" value="1"/>
+                <element inactive_on_update="false" label="Dependant (Owned by Relative)" value="3"/>
+                <element inactive_on_update="false" label="Owned" value="2"/>
             </choice>
         </element>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Number of Defaulted Loans" max_length="40" name="number_of_defaulted_loans" type="integer"/>
+        <element label="Birth Date" max_length="40" name="birth_date" type="glide_date"/>
+        <element label="Personal Computers" max_length="40" name="personal_computers" type="boolean"/>
+        <element label="Company Name" max_length="50" name="company_name" type="string"/>
+        <element label="Province" max_length="50" name="province" type="string"/>
+        <element label="Smart TVs" max_length="40" name="smart_tvs" type="boolean"/>
+        <element label="Contact Number" max_length="15" name="contact_number" type="string"/>
+        <element label="Region" max_length="50" name="region" type="string"/>
+        <element label="Middle Name" max_length="50" name="middle_name" type="string"/>
         <element choice="1" label="Vehicle Ownership" max_length="40" name="vehicle_ownership" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Rental" value="1"/>
                 <element inactive_on_update="false" label="Owned" value="2"/>
+                <element inactive_on_update="false" label="Rental" value="1"/>
                 <element inactive_on_update="false" label="Dependant (Owned by Relative)" value="3"/>
             </choice>
         </element>
-        <element label="Employment Description" max_length="256" name="employment_description" type="string"/>
-        <element choice="1" label="House Ownership" max_length="40" name="house_ownership" type="choice">
+        <element label="Laptops" max_length="40" name="laptops" type="boolean"/>
+        <element label="Smart Phones" max_length="40" name="smart_phones" type="boolean"/>
+        <element choice="1" label="Land Ownership" max_length="40" name="land_ownership" type="choice">
             <choice>
+                <element inactive_on_update="false" label="Dependant (Owned by Relative)" value="3"/>
                 <element inactive_on_update="false" label="Rental" value="1"/>
                 <element inactive_on_update="false" label="Owned" value="2"/>
-                <element inactive_on_update="false" label="Dependant (Owned by Relative)" value="3"/>
             </choice>
         </element>
-        <element label="Personal Computers" max_length="40" name="personal_computers" type="boolean"/>
-        <element label="Number of Defaulted Loans" max_length="40" name="number_of_defaulted_loans" type="integer"/>
+        <element label="Barangay" max_length="50" name="barangay" type="string"/>
+        <element label="Number of Loans Participated" max_length="40" name="number_of_loans_participated" type="integer"/>
+        <element label="User Name" max_length="50" name="user_name" type="string"/>
+        <element label="Employment Description" max_length="256" name="employment_description" type="string"/>
+        <element label="Number of Active Loans" max_length="40" name="number_of_active_loans" type="integer"/>
         <index name="index">
             <element name="system_user"/>
         </index>

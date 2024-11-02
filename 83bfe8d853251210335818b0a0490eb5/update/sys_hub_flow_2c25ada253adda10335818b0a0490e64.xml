@@ -1,0 +1,2042 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=38596000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>loan_application_v21_so_approval</internal_name>
+        <label_cache>[{"name":"subflow.input1","label":"Input➛21_loan_application_v2_1_lgo_approval_output2","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"4caa82ad-d2a7-4a1b-8bbc-0a05e69e57ea"}},{"name":"subflow.input2","label":"Input➛3_create_record_record","reference":"x_snc_loansharks_loan_application","reference_display":"Loan Application","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"82005cf3-8e66-404d-a3e3-eb01a4367526"}},{"name":"subflow.input3","label":"Input➛trigger_request_item","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ac9724c6-a944-4f5c-9e61-2d55e47863e5"}},{"name":"subflow.output1","label":"Output➛27_create_catalog_task_due_date","type":"string","base_type":"string","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"279ac08b-584e-4c74-8198-31f8781fefe5"}},{"name":"subflow.output2","label":"Output➛28_ask_for_approval_approval_state","type":"choice","base_type":"choice","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"76fff60a-17e3-4ac2-8b24-8215444fccc5"}},{"name":"subflow.output3","label":"Output➛27_create_catalog_task_catalog_task","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"45ea1209-5354-4904-82a7-ce4917c52f92"}},{"name":"subflow.output4","label":"Output➛27_create_catalog_task_assignment_group","type":"string","base_type":"string","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"470dd5e6-73d9-4d44-8c5f-1b7eab7e19fb"}},{"name":"179fe8a9-22c9-45c6-815b-6aa2af317edb.Catalog Task.assignment_group","label":"5 - Create Catalog Task➛Catalog Task➛Assignment group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"sc_task","column_name":"assignment_group","usedInstances":{"02f6da91-880d-441d-9489-96aeba30a04e":["disbursed_by"]}},{"name":"5776c1f8-4fa2-4680-8ad1-1ce4b0921252.approval_state","label":"6 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"1c64e473-eeb8-4148-91d5-446dd22c8868":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"179fe8a9-22c9-45c6-815b-6aa2af317edb.Catalog Task.due_date","label":"5 - Create Catalog Task➛Catalog Task➛Due date","reference":"","reference_display":"Due date","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"sc_task","column_name":"due_date","usedInstances":{"1c64e473-eeb8-4148-91d5-446dd22c8868":["condition"]}},{"name":"179fe8a9-22c9-45c6-815b-6aa2af317edb.Catalog Task","label":"5 - Create Catalog Task➛Catalog Task","reference":"sc_task","reference_display":"Catalog Task","type":"document_id","base_type":"document_id","usedInstances":{"fbb020df-11b9-4037-aa69-67247e0cacb5":["record"],"9250455e-0114-4c79-bec3-6852a2f8183b":["record"],"d3a2e0cc-edbd-438f-8c67-eadc7d0bfbd5":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.48f173d453e15210335818b0a0490ea3}}","label":"LoanShark Financial Officer Approvers","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"4fe9c803-5312-4f96-b768-cff450dd4c70":["approval_conditions"],"fbb020df-11b9-4037-aa69-67247e0cacb5":["approval_conditions"]}}]</label_cache>
+        <master_snapshot>b025a5e653adda10335818b0a0490e97</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Loan Application V2.1 SO Approval</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2c25ada253adda10335818b0a0490e64</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Loan Application V2.1 SO Approval</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name>sys_hub_flow_2c25ada253adda10335818b0a0490e64</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 02:42:59</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=2c25ada253adda10335818b0a0490e64"/>
+    <sys_variable_value action="delete_multiple" query="document_key=2c25ada253adda10335818b0a0490e64"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_2c25ada253adda10335818b0a0490e64^id=2c25ada253adda10335818b0a0490e64"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=2c25ada253adda10335818b0a0490e64"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=2c25ada253adda10335818b0a0490e64^sys_idNOT INa825ada253adda10335818b0a0490e65"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>2c25ada253adda10335818b0a0490e64</id>
+        <name>Loan Application V2.1 SO Approval</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:41</sys_created_on>
+        <sys_id>a825ada253adda10335818b0a0490e65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 15:59:41</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a825ada253adda10335818b0a0490e65"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=2c25ada253adda10335818b0a0490e64^sys_idNOT IN2825a5e653adda10335818b0a0490e10,6425a5e653adda10335818b0a0490e14,a425a5e653adda10335818b0a0490e17"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=a1d2b8ce-d1ae-4337-9e2e-d7f52ec9f796</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>input1</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>21_loan_application_v2_1_lgo_approval_output2</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Loan Application V2.1 SO Approval">2c25ada253adda10335818b0a0490e64</model>
+        <model_id>2c25ada253adda10335818b0a0490e64</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_2c25ada253adda10335818b0a0490e64</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_task">sc_task</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:41</sys_created_on>
+        <sys_id>2825a5e653adda10335818b0a0490e10</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 02:42:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2825a5e653adda10335818b0a0490e10"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=aeb666a8-bdcd-48a5-bb2e-c6bbfa2aec34</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>input2</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>3_create_record_record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Loan Application V2.1 SO Approval">2c25ada253adda10335818b0a0490e64</model>
+        <model_id>2c25ada253adda10335818b0a0490e64</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_2c25ada253adda10335818b0a0490e64</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_loansharks_loan_application">x_snc_loansharks_loan_application</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:41</sys_created_on>
+        <sys_id>6425a5e653adda10335818b0a0490e14</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 02:42:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6425a5e653adda10335818b0a0490e14"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=6e64fbb7-f6ba-45ea-b449-6c5ef5bcac4e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>input3</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>trigger_request_item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Loan Application V2.1 SO Approval">2c25ada253adda10335818b0a0490e64</model>
+        <model_id>2c25ada253adda10335818b0a0490e64</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_2c25ada253adda10335818b0a0490e64</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:41</sys_created_on>
+        <sys_id>a425a5e653adda10335818b0a0490e17</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 02:42:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a425a5e653adda10335818b0a0490e17"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=2c25ada253adda10335818b0a0490e64^sys_idNOT IN2425a5e653adda10335818b0a0490e45,2425a5e653adda10335818b0a0490e4a,2825a5e653adda10335818b0a0490e4d,6425a5e653adda10335818b0a0490e41"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=6e30d7ad-8869-475e-bc26-765c09b4b4c8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output2</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>28_ask_for_approval_approval_state</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Loan Application V2.1 SO Approval">2c25ada253adda10335818b0a0490e64</model>
+        <model_id>2c25ada253adda10335818b0a0490e64</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_2c25ada253adda10335818b0a0490e64</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:41</sys_created_on>
+        <sys_id>2425a5e653adda10335818b0a0490e45</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 02:42:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2425a5e653adda10335818b0a0490e45"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,staticDependent=sc_task,uiType=reference,uiTypeLabel=Document ID,uiUniqueId=e1b262a8-cdbd-4b15-a0d4-90b5195e6063</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output3</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>27_create_catalog_task_catalog_task</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Loan Application V2.1 SO Approval">2c25ada253adda10335818b0a0490e64</model>
+        <model_id>2c25ada253adda10335818b0a0490e64</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_2c25ada253adda10335818b0a0490e64</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_task">sc_task</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:41</sys_created_on>
+        <sys_id>2425a5e653adda10335818b0a0490e4a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 02:42:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2425a5e653adda10335818b0a0490e4a"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=24b6bc89-6da4-4328-bfe1-d8b1449d126c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output4</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>27_create_catalog_task_assignment_group</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Loan Application V2.1 SO Approval">2c25ada253adda10335818b0a0490e64</model>
+        <model_id>2c25ada253adda10335818b0a0490e64</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_2c25ada253adda10335818b0a0490e64</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:41</sys_created_on>
+        <sys_id>2825a5e653adda10335818b0a0490e4d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 02:42:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2825a5e653adda10335818b0a0490e4d"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e3e2d181-2f7a-41d1-aad2-8bb38ad87981</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output1</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>27_create_catalog_task_due_date</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Loan Application V2.1 SO Approval">2c25ada253adda10335818b0a0490e64</model>
+        <model_id>2c25ada253adda10335818b0a0490e64</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_2c25ada253adda10335818b0a0490e64</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:41</sys_created_on>
+        <sys_id>6425a5e653adda10335818b0a0490e41</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 02:42:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6425a5e653adda10335818b0a0490e41"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2c25ada253adda10335818b0a0490e64"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=2c25ada253adda10335818b0a0490e64"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=2c25ada253adda10335818b0a0490e64^sys_idNOT IN3825a5e653adda10335818b0a0490e60,3c25a5e653adda10335818b0a0490e61,7825a5e653adda10335818b0a0490e62,b025a5e653adda10335818b0a0490e61,b025a5e653adda10335818b0a0490e63,fc25a5e653adda10335818b0a0490e5f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Loan Application V2.1 SO Approval">2c25ada253adda10335818b0a0490e64</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:42</sys_created_on>
+        <sys_id>3825a5e653adda10335818b0a0490e60</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 03:03:43</sys_updated_on>
+        <ui_id>e111726b-c452-40f5-a667-91cf8acd3142</ui_id>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K8jPVZU0BUHfJiqkSQwkmHhhKLqxb1prjp3ZDtBV/e+7Tpw2KowViRe0PtX3y+ec3JPcr5kUbMamKJL0LD3hWZplkySZnE7T4iQr0onIADFlI6ahQqq0yI0VdH4E1YTAeu2aolTmaSx13fjJZkNJIV2tYHUXayjCl1IJi5rN7h9GrAZL4zxaNlvvpQ7Fo6BARaU3PaB9gH5Vh7MwvKlQ+1z2wcvYOY+Zo69zylBTgJMmI4bPHrVAAlKCcjhiFWgB3tgVm3nbUMAiiGutVtuKpdS+I1rBs5O/6eZpEupKJGY8irA9fodC4bwTqUuVc/BwS9O5b+xWMyM5uk4XgSU0yp8PY13Bde2l0V2LD4Njt1FNpa86Vdh2wOCZNA5zgXXgGtB31MrbpXm66YFeSN3KEmkqw0FtT+C9lUXjA5w1Q4WtzhXUtdSLvLbmUbbNBKUaLxQdxmFR6E4nF3oMPOAek7IwvqD4vA3fgZWBxDcaQ82bEXMrd67AuR0V0jH/1QQkHbFIIW9VaCXI220IzdzK2n+hqx4xAt+M4tYXx29tGT/bLdVg5m7zn3Onea4MaLcE+9O1f3OCrSSH9pG8MMIhLe9zygEceqe0S/cXTtEsL2KXw96jqy4RrXL8YVY5/WxWiVQ+vVf+5ZBk8uZ7eLBNrSncwB0OtTQ2N2VJutuw48QR1I8mSTLRnVC8dMihbe9zyQE8epdcSFTCvUKstwhWhNdj3hHds0lMHt3F5Par8mFeSU+S9vfJHPPffFwe/gAxBNnLVAkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Loan Application V2.1 SO Approval">2c25ada253adda10335818b0a0490e64</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:42</sys_created_on>
+        <sys_id>3c25a5e653adda10335818b0a0490e61</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 03:03:43</sys_updated_on>
+        <ui_id>e523f455-e786-4628-a300-55159695313d</ui_id>
+        <values>H4sIAAAAAAAA/9WV207jMBCGX6XKdVPl2KbcISokJBZWlOUGoWhij6m1zoHEKXSrvvvaSdo0bSmHXVbaS49P//wzn32/NDg1TgyPBpSOmW0x27Yt2/Jtxw4wwIiMhiN0AqNvJBCjWpkjSXOqxnMQpQ4sl0UZMZE+D3iSldJerdQk5UUmYHHXrFERMuOC5pgYJ/cPfSODXB0nMTdOljtT79UjIEKhlt6sBe0KlItMj2lKyhgTGfJ18LLZOWlmehcTNaM2aTl238AXiQlFpYOBKLBvxJBQkGm+2ERyBHqdiDYw44msE43hpeC/1M2uo9cxVJmRxoTN8BYigZPapHqKTUDCVOYlkWW+8SzlBIvaF4oMSiHPtmP1gutM8jSpt0h9cLM7FWWcXNWuGJsDtmpSFhhSzHSyWr26XGXCprP0+WYt9JwnlS1NmiIlIDYjkDLnUSm1nKVR8ttDjtfhw56jwGphDFnGk8cwy9M5r+5T6uPBo1CDge4tJbPgj8kAiE51oKoBg3MVn1ThO8i5zvubOkZt1nf+SPhTiRe6l6htjdyxRcyR47umZxEwo4BGJkQO8z1vGAwj21j1jWJRnAkoitYxVa7wqdQJ1/41ToWV2ZXTYdV0ejPJeSZPlbw5Nv6s+g1cgX2smV2n7d2tM1vAChJKKH7uU9VOfAyud+hZw1X16Sv6Gr72Ypfbe3tX9URDl/NBuuqWPABXYP1ncDWp/TldHb+7cHUc/ydskSiKWIRj044IMb0RBmbgwMhE3yIuc1zLGrFPsPUWUd7xDt76rpJUcsYJVEVsmQrAZb5P0Hcd3wfbcl1fURFZYHljC5m1D9v0tPddJaCc7F2mkPROs0y0537wd3tb/hrAq67+w1k1JLY8dEG82Yo3HLrHOayx+8wnpwqNc11HjIGLsO6pI3Du5PeXQX1NTYdeYAyJRBoyjoKqBgyrPV/yY7IpQk5m5/omXcca1S7pneIq3tUde6Rvl/TrQL/d76sCZdjYEuoDQpbmMeiuqDLcfR+8sY0j1wnM8dBR7wO6vhlR1zVt9V4gAjKHfs3f+/AbGb7LrdoKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Catalog Task">af51fd0e73141300612c273ffff6a785</action_type>
+        <action_type_parent display_value="Create Catalog Task">f597c41073081300612c273ffff6a767</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>af51fd0e73141300612c273ffff6a785</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Loan Application V2.1 SO Approval">2c25ada253adda10335818b0a0490e64</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:42</sys_created_on>
+        <sys_id>7825a5e653adda10335818b0a0490e62</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 03:03:43</sys_updated_on>
+        <ui_id>179fe8a9-22c9-45c6-815b-6aa2af317edb</ui_id>
+        <values>H4sIAAAAAAAA/+1Z23LbNhD9FQyfklSlSVFX98mN67YzSdyJMu5DFHNAEpTQQCQDgFZUj/+9iwupCyXZmlgZZ2o/WYtd4OzlYAHw461DE+fUwWnXTxOP9AO/4wee1/PbcbsfpPDXw/3BwGk5GZ4RpTkNJY4YCfXvlnODWankIga5+AyShIqC4cVVYyCeUpZwkjmnHz+1nAJzmEES7pzebgw9FBLDEWGg+kEBQu8MoB045aJQ4obszbY5cp4oXF7LIV8lyRICgFLMBGk5M5wlWOZ8UUs4wcllxkAgeQm/pzSTMKGjdL8K+i8sO/CUWkrAw5iYsfqnXvjcxMwMpedY4hFMFsuSW/V4mtOYCBOfhKS4ZPL1qswoXBaS5pkx0a5a65yVs+ydiYxTT9BMkR0435XCUpAwIYUKiXLSRiAdTfP5+8qhC5rp6NlBlseY1b+wlJxGpVSwofZEKGJOiwqqVoJlCCMzWCCc4aKg2SQseH5D9aTgysydMPjhpiyfAxhBJ5mLY+W3C5nB7gXIz7X4CnOqZn4L04AxrM6UjXYHxELVA6TMuWs5YiFeMyzEMkaQoPBLqaCbiFmnQxNeZaKRn8HKN8T6d9eyfOoH+4oXe2t1ysmXkghJkpBKMlvh1O2tKCPlpkuzopTB3V2TXgfz6gHQKl69r4ChPw2wPZgtv5ZVvk6v9ytyyy5/P7sMmZbkshpb2BW019kF+QV4FbBdRGs4991p9xh8SkcE83h6QQlTyc3KWWQqfY1nx+JTDpkJE54XhXX6SHQK+ntrtrdWmmKac6kc0ROqvCwZBemPSi50NNBfU6x3mw1GbdU5jGMPwFtxbKTQovM1tPt9sUwTkOBsskGzUSW0HGsf2MF2k8xve97T7mKP356OQ5sjdJv95RavlVSqtgqxwglABX5hNi49L0jqjf1aSCyJEfrXyrMbKoHtpZWlyc8GE6iCK+CnjtWE52VhNG7HFbXGzunYeZPjbDTF/DOCFOAsppihyzSFfHN0pjEQLsZOa2yQaZvOIPX7QdLpBsTvtn0vCLoDfxB52OsMPYIDrQ7RDGnyQP276xU2GZxvFSY5pQKpUw6C1BYMyI3mU5KhRV6iKb4hKC0ZW6DEbg4JGGCJGPiE8CwvYauQOcgIihmFOKiZ232B0tpVHMdKTbjXEMIwqWO7EsfmXvScmyeUmwPPWfeTsuoBFxUlt7C0urcQcBxwhYa1G3cXO4iu7KDd/YNH2/173cbuv7wU7GoCr2EbZPkEfTBqT6AhmDPlD98P9G1AuOtX3EaPMM4amUJflbb6f5+mc/JqnL16dRZDEgRSsE/OtB9I+YFKAa5rNqVJqCV59A+JpYtGegI0K4VEnECSgX5I16uL1IyXqiqROaIiYHSepoJIFC3QTz6iGfqN85yjP6BAmVpiREz0NJgbTJm+oee6FASyuxcqCwBWcICqbMaOO3YQToGWFTxlTr5itW+cAhqO9JlKHbiQIXml6EKqJxPC3bjkUBnSbRy+flFzWc/qWZTwZJyNMzU3xPgDnZFq5ozM0e+qKqD09cCLl6BulVycJOd4Id6oitODgRq181slEED+BWxySV3WkOnVLf85n8fI53Gy2czlXX2KS/c2jKi91h/mmMqVM5zXPDpUbymHda0HgKi61t8GQgOT7VhRnjOCs81WBaV5cmGh2TbVebQ21XnaNxR9O971yGYH/6dXmHvqbuUBuj4JxeZ4sflohttBtz/oed2gN2weM71Bkynq8KtOuYzClOaO/aikWXuqro5q1eFo/WVtl3OHv651H41UW57XAN19z2sb/j2Bw9+3P66ZjwPf52kN+tE8FHr9Iz5TR3sLd+VzSlWPNxbn6gMCiYfBYIiBcXgL4/reqSqV0DT6EJpoiyTtTsfHne0GEWkYpEBmz+8NthuQpoGXen1YYYdB3G4YDIe9fme4y6Dfaxj4JB14Ow2iYdOgHQw7STvebpA2feiQ7tBLyI4Vgn7DoIsHw0G3t2OFYcPp5k74nMkfNpMHPk7cT/yqY1Ub+dUK8/dsCtXrNCvFNCrjz0Ru9KqRGkG/VkO2XfWeH6q/7TtqCscGiN8yF1AXREfz6F9VaRazMiHhDHykHMxrDETW31iNzyuzEx7OuZmiVhF5yWMSVqFsVnl9p52ny1VevHzE1vjpP3ipj24TIQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Loan Application V2.1 SO Approval">2c25ada253adda10335818b0a0490e64</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:42</sys_created_on>
+        <sys_id>b025a5e653adda10335818b0a0490e61</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 03:03:43</sys_updated_on>
+        <ui_id>db537c49-65e9-4c15-a57c-f8a5dc642f32</ui_id>
+        <values>H4sIAAAAAAAA/9WV227UMBCGX2WV680qp91ke4dYVUKCFrWFG4SiiT3uWjhOcJzSsuq7M06yp26PQJG4i8en+f+ZL/6y8iT3jryEZ5zPRRiIMAyDMJiGUZhhhgVLZylGmTf2NJRIKw2yynAaX4FqXWC1atpCqOrHROq6tdHtLU1y2dQKbj4PayjCllJxg9o7+vJ17NVg6DiLxjta3Zl6bj4KClS09Gyd0N0E7U3txrxibYna5nIdfD/sXAwzo3cLmqFNLp1w7OG1Rc2R8hCgGhx7JWgOtjI3m4hB4KdabQNLqW0vtITrRv6km+PIrRNIythgwmZ4AYXCRW9SPyUWYOHcmpbZ1mw8qyTDpveFo4BW2be7sX7BaW1lpfst1h087K5UW+qT3hVvc8BOTdoGc461E+uyp8tJiThfVj/O1okeS93ZMshUFQO1GYG1RhatdemsvFZe3Od4H77fc1TYLSyhrqW+zGtTXcnuPsq+nFwqGkxcb1GajbzUE2BO6oSqAZNjii+68Gcw0un+QMfQZnfnJy2/t/jO9RIPgzSeB8xPo2nsJwEDv8h44UMRiWmSzLJZEXq3Y6+5ad4qaJqtY1Su/HvrBPf+DU7lndmd03nXdG4zM7K2byi9Kxz8uR0PcGXhY80cR9ve3TlzC9h13miWqwp0swTzrek+c5KqJIOu8ge8PWfLy4B8hoY1kF1vP6BpYPIg9n537+iknxiIjF5IZN/G9wCZBf8ZkIO0Pydyz+99IPcc/yc8sqIoRIFzPywY85MUMz+LIPVxGrBYRHEQpOI3eHyKwuTxDt554nRlpdiCsuYwCdMQ5wn9RGbTKYRBHE+JiiKAIJkHyMUhhh8pe+Sjc9SyMqNTQYeiGb2pna2k4sWP4tMK1gye7Eu4X9gA4xaJfRbPduIDivHjKPbk/c7bSLXGK1dKLEGqvG+rR/i8o+8vs/pQNnsAgxDILPJcSFScejDv9rzKQyvOEQxbHrubXB17Wvdh3ysuIU93HMC+W9LXY/3isK8atPlgS+4OyEVlSnBd0Sm8+4tI5iGmcZT581lEvwiMp37B49gP6ZeBCCgi/jpP9tdf1hTQbRELAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Loan Application V2.1 SO Approval">2c25ada253adda10335818b0a0490e64</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:42</sys_created_on>
+        <sys_id>b025a5e653adda10335818b0a0490e63</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 03:03:43</sys_updated_on>
+        <ui_id>5776c1f8-4fa2-4680-8ad1-1ce4b0921252</ui_id>
+        <values>H4sIAAAAAAAA/+1XW2/aMBj9K8jPlCUESuCtKuq0aRdprfpSqsixndabcTLbacci/vu+xM5l0DLYeKm6R38X53yHc2x8UyBO0QxNwmTIptOhF/ueF3heOCZeGLA4mJxOAkw81EcSLxlUKkZSRWH9gEVeBorCn0wTFuLpyXBIpiejMTk9Cf1xfHKK8RAngT9hNB6cY4NFete7wvrbeg39lOtM4NW12wYi5J4LqphEs5vbPsqwgi8aptCs2EjtC1ngmAko/VJj3pzBrLJyTVOSL5k0Ea+DH1zn3GV67+aQgaYSjtdH7IdhkjLAkWChWR8tsaTYpGqFZkblEFAM089SrJqKey6NnXOJf2j+Ez4cDMu6hMFgxHHQLK9wLNjccmRTyRwovITdiclVQ1nKCdOWFsoSnAtz3o3Zgs+Z4am0Labc2HWnIl/KT5YU1GzQ+UlyzSLKsnLWEr0dLbm8Tx+/1EAvuKxYcWOKlGDRrLAxise5KeEUiAlW0bzEWcblXZSp9IFXzQBlObgTsBgkIn2Eb2p+JweYlLgHwCweXEB8XoWvseLlEB9hG2he95Fe6XOBtW5HAR6j73mJxA7mRogqFiwFZR9RPDNn8JUH5jCv+84SMdmpL9LKyW7XOkKTyIDKtzXeJg6T+h5QaqlfOSwb0JzQq2VU5X7XedXW+2QTTub+bpm7SKtzK44nZB56L0zmbrQXr/M/Sdzzd+mKhq2OAAHMgEWUcCa6p3+d2BZ7J3OY2vdAVav9zH2jd+FgPQfX6b9aPqX/qn9D/8MD9f/8OR963kuzwGs66clOwbGg1dXXNFfyCRfATOW4OgJ5RI+p+hbJtGRiyxTPFx7mkT0g1x55bzFvWmRzlL9xSPDfIa/DIaPxTrl1/nA0Jy9JJeUlYt3xiT2vmT6Tq7c3RaENNpwMRmHiTwI6GgfMHw99LwjGoR/GHvZGU4/hYL2+3XbSv2x1mNf2GL55aOSiMvNOMpzTmqRyTV23NRdbvaNz3OhYT48XaLjX8q+M7NRbMm31RXMgCJvu26NYIAt7gWYLJFPJFqi/QGVVVAqsCkMFgGsSVawo1msbyRV2G/idZdtN8UpXlZrcMwr6rKK/RaLKEC5+jMf+HpzUHpznrDe3pGzT5LzX4LS88K3b7tIVVDu9ueLdW298tFtv9N+Cx7AgwORR89yAKw1OwSP68vYXoGHcmCUTAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Loan Application V2.1 SO Approval">2c25ada253adda10335818b0a0490e64</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:42</sys_created_on>
+        <sys_id>fc25a5e653adda10335818b0a0490e5f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 03:03:43</sys_updated_on>
+        <ui_id>3ca755d7-eebf-4840-a756-d76be46fcb67</ui_id>
+        <values>H4sIAAAAAAAA/+VVTW8bNxD9KwSPrrretRwjUU5GVKMF0hiICl+iZMFdzkpsuOSWH7ZVQf+9w4+VBTtxHMAXo74YnOHMvPf4RvtpSwWnM3oKvKzeVGfttJpOT8ry5PVp1ZxNm+qETxlARSdUsR7wpoFWG47nayZ9CGy31jed1DeFUIN31W6HSS7sINnmKt/BSLsWkhtQdPbp84QOzGA7B4bOtvdST8UjWQMSr34cAd0H6DZDOHPd+h6Uq8UYfJ8r5zlD/phjBosCnKqcULh1oDggkI5JCxPaM8WZ02ZDZ854DBhg/FLJzf7GWiiXiPbs1op/cfJpGe51gMzaLML++BdrJMyTSCnVzZljC+zeOm/2mmnRgk26cOiYl+7dYSxduByc0CqVuNA4V2vpe/UhqUL3DQ7exFuoOQyBa0CfqHWLtb75OAK9ECrKkmlK3TK5PzHnjGi8C3C2FCREnXs2DEKt6sHoaxGLEUpfrCQeimAUnGnFShWsDbgLVJYVFxifx/AVMyKQ+BPbYPFuQu3GvpPM2jsqqGP9jw9IErFMoY4qRAnq6IZQ3BoxuHMcdQ0Z+G6SXd+8esxl7Zs7Ux30vHO+bWvH7NeHdr9L/Jzrn4BndH000HfwZeM/iL0/rCUfUiLb/tWz2f71S7N9pvLiff8jt5cnj/6mHrgpGtweOB0hISkml74spzydgH+xjjlIsekX5BpksDWapr7R5mutNCqU0h3/NUED/nBdnrn7z+3cE1QZd+5CgOT2GzKNCwc90nJQJ9nuLV1Okquc3H9vnm3zqrMy/r2w/fsffHYSxRSLPvy2m0PqsUJ6fLRUR0fnLb6EJQH78XkkQwIZ4i3yJ24NpON1jOjmb2hdQRaxAem9dcQAvrQijESXFiR0vAxeJMr3Df4Tluius+BIsyG/VEQo8psx2pDfEa0MIxaQJIxgrpmQ8YOiox8sydtN/IDABoNQQ82SFktKWIebOMIL5XDLcC9ghmgMsWttHD5HS9JejxcLfO/VCkzReoP2cEW8GN4z8sKpb0OvzGzfJQSPl2qpQu8ecbAVjJ2XdAFKICmkil42ZPzZIVIzFU5StCxqi6yDJkrfkLCFG9JhGZJsvLHRekuKk/LwPOYt+sMybLe3/W63+/wfctMEcW4LAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=2c25ada253adda10335818b0a0490e64"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=2c25ada253adda10335818b0a0490e64^sys_idNOT IN7025a5e653adda10335818b0a0490e64"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b825a5e653adda10335818b0a0490e63</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Loan Application V2.1 SO Approval">2c25ada253adda10335818b0a0490e64</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned>output1,output2,output3,output4</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:42</sys_created_on>
+        <sys_id>7025a5e653adda10335818b0a0490e64</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 02:42:57</sys_updated_on>
+        <ui_id>e2d41476-841f-4de7-a369-7a750af995e5</ui_id>
+        <values>H4sIAAAAAAAA/+1XTW/bOBD9K4HOpiFSlETlViQoEKDbAtu0l0UhDD/kEJUlVaKSuob/+w5tybENp3UTd7eHHjkkZ957nCdSy6DuXdO77rZ+1XV2VgWX/ywDq4PLIOEshtgkcQRaAw2jKBZUyBBCnoWG02ASVDA3uHKTwgfuoex9ZLmkaVYYARlhTGWExyohgsaSJAAMioimRsvpFTgo69nFLXSfp7o3uQZnVitMpG3XlLD4eK586s6WujWe3qdJ0ECLyJ1pg8vlwZRbNCYvQZoSy753ra1muP1UQcaNLM1Va7B4rjaQcoeQ8hHSMel8YQx0Y8m61R4fnQTmqzOVNgihgLIzk2AOFWap20Vw6doeA1hKv6vKxXbFna0cJgv82q+d/YaZRRiGfmVhkKsym1l1V1tl3jXO1tUm4kCW42Rd9vPq7QaoPxNTQF+68Uww0nfIxzQena83FC/e39UPf4+FXttqTWSYLGsF5XYEDunK3pnOn0Rvbw9E2ETeHB6HKc0cK+ZzaBqM5E1b39t1FQQ9n85KHEyLsn5AdL6pp6A8wymqBtPXGL9ehz9Caz3dvzANbvblPlT2S29u/HGbyDBNBSWsSIFwqikB0IwIKSMBWqSZoMFqLWn+pfekNiINcuQbRXFBp1rbuFcI4d4MzFeTwWTs+z0VH3YK2zNZnKaJooUgvABGeCJCgsgoocpwGWaMsphNkRzKA2XeuSfddVqiZ/voat1mo49O4Lz1kci9b4q6zbc09vkcE2iwkhqrDlZi57ISf8pI3frrOYIn5OJtXZkLQnYO7RFOuPq09dTVz2+nfvuBf+nvYuCt9PsG3vbBf2LgxEShTkETIRK8MtLYEKlYQtIkVmEmueRK/GoDw2F/Ri+7JY/Z99m23B7xic6EH99wu4Nj1AdrtjuVh36OzuXOiO27s1Mjmt/0ttsVY98v17XqvU8ubq5/oWn8d9Sq60dmO5Lt34hUsoSBIEpLTbikMYFQc5KFMqYZ9k2YRC83lPhuD+rDruIvfHbC+tm7FnbW1n1zrufn0bzneIaeINAPTHoI7ZikTzxH+Z/n6P/0HGVcJlKJjCQaOOERE0QWhhItJOU805Ql6tnmw46zlf8N3HTf/YBkGGqjbIeAb33sZmedXmDfWLUbeqjbz57qY2z1L8c5iphkDgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=2c25ada253adda10335818b0a0490e64"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=2c25ada253adda10335818b0a0490e64"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_2c25ada253adda10335818b0a0490e64^sys_idNOT IN2825a5e653adda10335818b0a0490e19,a425a5e653adda10335818b0a0490e13,e425a5e653adda10335818b0a0490e16"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>input3</element>
+        <help/>
+        <hint/>
+        <label>trigger_request_item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2c25ada253adda10335818b0a0490e64</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:41</sys_created_on>
+        <sys_id>2825a5e653adda10335818b0a0490e19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 15:59:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>input1</element>
+        <help/>
+        <hint/>
+        <label>21_loan_application_v2_1_lgo_approval_output2</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2c25ada253adda10335818b0a0490e64</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:41</sys_created_on>
+        <sys_id>a425a5e653adda10335818b0a0490e13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 15:59:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>input2</element>
+        <help/>
+        <hint/>
+        <label>3_create_record_record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2c25ada253adda10335818b0a0490e64</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:41</sys_created_on>
+        <sys_id>e425a5e653adda10335818b0a0490e16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 15:59:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_2c25ada253adda10335818b0a0490e64"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_2c25ada253adda10335818b0a0490e64^sys_idNOT IN6425a5e653adda10335818b0a0490e44,6425a5e653adda10335818b0a0490e49,6825a5e653adda10335818b0a0490e4c,7025a5e653adda10335818b0a0490e5c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output1</element>
+        <help/>
+        <hint/>
+        <label>27_create_catalog_task_due_date</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_2c25ada253adda10335818b0a0490e64</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:41</sys_created_on>
+        <sys_id>6425a5e653adda10335818b0a0490e44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 15:59:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output2</element>
+        <help/>
+        <hint/>
+        <label>28_ask_for_approval_approval_state</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_2c25ada253adda10335818b0a0490e64</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:41</sys_created_on>
+        <sys_id>6425a5e653adda10335818b0a0490e49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 15:59:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output3</element>
+        <help/>
+        <hint/>
+        <label>27_create_catalog_task_catalog_task</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_2c25ada253adda10335818b0a0490e64</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:41</sys_created_on>
+        <sys_id>6825a5e653adda10335818b0a0490e4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 15:59:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output4</element>
+        <help/>
+        <hint/>
+        <label>27_create_catalog_task_assignment_group</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_2c25ada253adda10335818b0a0490e64</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:42</sys_created_on>
+        <sys_id>7025a5e653adda10335818b0a0490e5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 15:59:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_2c25ada253adda10335818b0a0490e64^sys_idNOT IN59587fee53691e10335818b0a0490e41"/>
+    <sys_choice field="output2" table="var__m_sys_hub_flow_output_2c25ada253adda10335818b0a0490e64">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>output2</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_2c25ada253adda10335818b0a0490e64</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-02 02:42:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>59587fee53691e10335818b0a0490e41</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-02 02:42:48</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>labelCacheCleanUpExecuted=true</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>loan_application_v21_so_approval</internal_name>
+        <label_cache>[{"name":"subflow.input1","label":"Input➛21_loan_application_v2_1_lgo_approval_output2","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"4caa82ad-d2a7-4a1b-8bbc-0a05e69e57ea"}},{"name":"subflow.input2","label":"Input➛3_create_record_record","reference":"x_snc_loansharks_loan_application","reference_display":"Loan Application","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"82005cf3-8e66-404d-a3e3-eb01a4367526"}},{"name":"subflow.input3","label":"Input➛trigger_request_item","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ac9724c6-a944-4f5c-9e61-2d55e47863e5"}},{"name":"subflow.output1","label":"Output➛27_create_catalog_task_due_date","type":"string","base_type":"string","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"279ac08b-584e-4c74-8198-31f8781fefe5"}},{"name":"subflow.output2","label":"Output➛28_ask_for_approval_approval_state","type":"choice","base_type":"choice","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"76fff60a-17e3-4ac2-8b24-8215444fccc5"}},{"name":"subflow.output3","label":"Output➛27_create_catalog_task_catalog_task","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"45ea1209-5354-4904-82a7-ce4917c52f92"}},{"name":"subflow.output4","label":"Output➛27_create_catalog_task_assignment_group","type":"string","base_type":"string","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"470dd5e6-73d9-4d44-8c5f-1b7eab7e19fb"}},{"name":"179fe8a9-22c9-45c6-815b-6aa2af317edb.Catalog Task.assignment_group","label":"5 - Create Catalog Task➛Catalog Task➛Assignment group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"sc_task","column_name":"assignment_group","usedInstances":{"02f6da91-880d-441d-9489-96aeba30a04e":["disbursed_by"]}},{"name":"5776c1f8-4fa2-4680-8ad1-1ce4b0921252.approval_state","label":"6 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"1c64e473-eeb8-4148-91d5-446dd22c8868":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"179fe8a9-22c9-45c6-815b-6aa2af317edb.Catalog Task.due_date","label":"5 - Create Catalog Task➛Catalog Task➛Due date","reference":"","reference_display":"Due date","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"sc_task","column_name":"due_date","usedInstances":{"1c64e473-eeb8-4148-91d5-446dd22c8868":["condition"]}},{"name":"179fe8a9-22c9-45c6-815b-6aa2af317edb.Catalog Task","label":"5 - Create Catalog Task➛Catalog Task","reference":"sc_task","reference_display":"Catalog Task","type":"document_id","base_type":"document_id","usedInstances":{"fbb020df-11b9-4037-aa69-67247e0cacb5":["record"],"9250455e-0114-4c79-bec3-6852a2f8183b":["record"],"d3a2e0cc-edbd-438f-8c67-eadc7d0bfbd5":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.48f173d453e15210335818b0a0490ea3}}","label":"LoanShark Financial Officer Approvers","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"4fe9c803-5312-4f96-b768-cff450dd4c70":["approval_conditions"],"fbb020df-11b9-4037-aa69-67247e0cacb5":["approval_conditions"]}}]</label_cache>
+        <master>true</master>
+        <name>Loan Application V2.1 SO Approval</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Loan Application V2.1 SO Approval">2c25ada253adda10335818b0a0490e64</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b025a5e653adda10335818b0a0490e97</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 02:42:59</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=b025a5e653adda10335818b0a0490e97"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b025a5e653adda10335818b0a0490e97"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_b025a5e653adda10335818b0a0490e97^id=b025a5e653adda10335818b0a0490e97"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=b025a5e653adda10335818b0a0490e97"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b025a5e653adda10335818b0a0490e97^sys_idNOT IN3425a5e653adda10335818b0a0490e98"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b025a5e653adda10335818b0a0490e97</id>
+        <name>Loan Application V2.1 SO Approval</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:42</sys_created_on>
+        <sys_id>3425a5e653adda10335818b0a0490e98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 15:59:42</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=3425a5e653adda10335818b0a0490e98"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=b025a5e653adda10335818b0a0490e97^sys_idNOT IN0125a5e653adda10335818b0a0490ecc,3425a5e653adda10335818b0a0490e99,4d25a5e653adda10335818b0a0490eb8"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=6e64fbb7-f6ba-45ea-b449-6c5ef5bcac4e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>input3</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>trigger_request_item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Loan Application V2.1 SO Approval">b025a5e653adda10335818b0a0490e97</model>
+        <model_id>b025a5e653adda10335818b0a0490e97</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b025a5e653adda10335818b0a0490e97</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:43</sys_created_on>
+        <sys_id>0125a5e653adda10335818b0a0490ecc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 02:42:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0125a5e653adda10335818b0a0490ecc"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=a1d2b8ce-d1ae-4337-9e2e-d7f52ec9f796</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>input1</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>21_loan_application_v2_1_lgo_approval_output2</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Loan Application V2.1 SO Approval">b025a5e653adda10335818b0a0490e97</model>
+        <model_id>b025a5e653adda10335818b0a0490e97</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b025a5e653adda10335818b0a0490e97</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_task">sc_task</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:42</sys_created_on>
+        <sys_id>3425a5e653adda10335818b0a0490e99</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 02:42:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3425a5e653adda10335818b0a0490e99"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=aeb666a8-bdcd-48a5-bb2e-c6bbfa2aec34</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>input2</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>3_create_record_record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Loan Application V2.1 SO Approval">b025a5e653adda10335818b0a0490e97</model>
+        <model_id>b025a5e653adda10335818b0a0490e97</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b025a5e653adda10335818b0a0490e97</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_loansharks_loan_application">x_snc_loansharks_loan_application</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:43</sys_created_on>
+        <sys_id>4d25a5e653adda10335818b0a0490eb8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 02:42:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4d25a5e653adda10335818b0a0490eb8"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=b025a5e653adda10335818b0a0490e97^sys_idNOT IN4525a5e653adda10335818b0a0490eeb,4925a5e653adda10335818b0a0490edb,c125a5e653adda10335818b0a0490ee4,c525a5e653adda10335818b0a0490ed4"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=24b6bc89-6da4-4328-bfe1-d8b1449d126c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output4</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>27_create_catalog_task_assignment_group</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Loan Application V2.1 SO Approval">b025a5e653adda10335818b0a0490e97</model>
+        <model_id>b025a5e653adda10335818b0a0490e97</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_b025a5e653adda10335818b0a0490e97</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:43</sys_created_on>
+        <sys_id>4525a5e653adda10335818b0a0490eeb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 02:42:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4525a5e653adda10335818b0a0490eeb"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=6e30d7ad-8869-475e-bc26-765c09b4b4c8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output2</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>28_ask_for_approval_approval_state</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Loan Application V2.1 SO Approval">b025a5e653adda10335818b0a0490e97</model>
+        <model_id>b025a5e653adda10335818b0a0490e97</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_b025a5e653adda10335818b0a0490e97</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:43</sys_created_on>
+        <sys_id>4925a5e653adda10335818b0a0490edb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 02:42:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4925a5e653adda10335818b0a0490edb"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,staticDependent=sc_task,uiType=reference,uiTypeLabel=Document ID,uiUniqueId=e1b262a8-cdbd-4b15-a0d4-90b5195e6063</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output3</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>27_create_catalog_task_catalog_task</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Loan Application V2.1 SO Approval">b025a5e653adda10335818b0a0490e97</model>
+        <model_id>b025a5e653adda10335818b0a0490e97</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_b025a5e653adda10335818b0a0490e97</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_task">sc_task</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:43</sys_created_on>
+        <sys_id>c125a5e653adda10335818b0a0490ee4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 02:42:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c125a5e653adda10335818b0a0490ee4"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e3e2d181-2f7a-41d1-aad2-8bb38ad87981</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>output1</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>27_create_catalog_task_due_date</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Loan Application V2.1 SO Approval">b025a5e653adda10335818b0a0490e97</model>
+        <model_id>b025a5e653adda10335818b0a0490e97</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_b025a5e653adda10335818b0a0490e97</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:43</sys_created_on>
+        <sys_id>c525a5e653adda10335818b0a0490ed4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 02:42:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c525a5e653adda10335818b0a0490ed4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b025a5e653adda10335818b0a0490e97"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=b025a5e653adda10335818b0a0490e97"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=b025a5e653adda10335818b0a0490e97^sys_idNOT IN4125a5e653adda10335818b0a0490efa,8125a5e653adda10335818b0a0490ef8,8125a5e653adda10335818b0a0490efb,c125a5e653adda10335818b0a0490ef7,c925a5e653adda10335818b0a0490ef6,c925a5e653adda10335818b0a0490ef8"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Catalog Task">af51fd0e73141300612c273ffff6a785</action_type>
+        <action_type_parent display_value="Create Catalog Task">f597c41073081300612c273ffff6a767</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>af51fd0e73141300612c273ffff6a785</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Loan Application V2.1 SO Approval">b025a5e653adda10335818b0a0490e97</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:43</sys_created_on>
+        <sys_id>4125a5e653adda10335818b0a0490efa</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 02:42:59</sys_updated_on>
+        <ui_id>179fe8a9-22c9-45c6-815b-6aa2af317edb</ui_id>
+        <values>H4sIAAAAAAAA/+1Z23LbNhD9FQyfklSlSVFX98mN67YzSdyJMu5DFHNAEpTQQCQDgFZUj/+9iwupCyXZmlgZZ2o/WYtd4OzlYAHw461DE+fUwWnXTxOP9AO/4wee1/PbcbsfpPDXw/3BwGk5GZ4RpTkNJY4YCfXvlnODWankIga5+AyShIqC4cVVYyCeUpZwkjmnHz+1nAJzmEES7pzebgw9FBLDEWGg+kEBQu8MoB045aJQ4obszbY5cp4oXF7LIV8lyRICgFLMBGk5M5wlWOZ8UUs4wcllxkAgeQm/pzSTMKGjdL8K+i8sO/CUWkrAw5iYsfqnXvjcxMwMpedY4hFMFsuSW/V4mtOYCBOfhKS4ZPL1qswoXBaS5pkx0a5a65yVs+ydiYxTT9BMkR0435XCUpAwIYUKiXLSRiAdTfP5+8qhC5rp6NlBlseY1b+wlJxGpVSwofZEKGJOiwqqVoJlCCMzWCCc4aKg2SQseH5D9aTgysydMPjhpiyfAxhBJ5mLY+W3C5nB7gXIz7X4CnOqZn4L04AxrM6UjXYHxELVA6TMuWs5YiFeMyzEMkaQoPBLqaCbiFmnQxNeZaKRn8HKN8T6d9eyfOoH+4oXe2t1ysmXkghJkpBKMlvh1O2tKCPlpkuzopTB3V2TXgfz6gHQKl69r4ChPw2wPZgtv5ZVvk6v9ytyyy5/P7sMmZbkshpb2BW019kF+QV4FbBdRGs4991p9xh8SkcE83h6QQlTyc3KWWQqfY1nx+JTDpkJE54XhXX6SHQK+ntrtrdWmmKac6kc0ROqvCwZBemPSi50NNBfU6x3mw1GbdU5jGMPwFtxbKTQovM1tPt9sUwTkOBsskGzUSW0HGsf2MF2k8xve97T7mKP356OQ5sjdJv95RavlVSqtgqxwglABX5hNi49L0jqjf1aSCyJEfrXyrMbKoHtpZWlyc8GE6iCK+CnjtWE52VhNG7HFbXGzunYeZPjbDTF/DOCFOAsppihyzSFfHN0pjEQLsZOa2yQaZvOIPX7QdLpBsTvtn0vCLoDfxB52OsMPYIDrQ7RDGnyQP276xU2GZxvFSY5pQKpUw6C1BYMyI3mU5KhRV6iKb4hKC0ZW6DEbg4JGGCJGPiE8CwvYauQOcgIihmFOKiZ232B0tpVHMdKTbjXEMIwqWO7EsfmXvScmyeUmwPPWfeTsuoBFxUlt7C0urcQcBxwhYa1G3cXO4iu7KDd/YNH2/173cbuv7wU7GoCr2EbZPkEfTBqT6AhmDPlD98P9G1AuOtX3EaPMM4amUJflbb6f5+mc/JqnL16dRZDEgRSsE/OtB9I+YFKAa5rNqVJqCV59A+JpYtGegI0K4VEnECSgX5I16uL1IyXqiqROaIiYHSepoJIFC3QTz6iGfqN85yjP6BAmVpiREz0NJgbTJm+oee6FASyuxcqCwBWcICqbMaOO3YQToGWFTxlTr5itW+cAhqO9JlKHbiQIXml6EKqJxPC3bjkUBnSbRy+flFzWc/qWZTwZJyNMzU3xPgDnZFq5ozM0e+qKqD09cCLl6BulVycJOd4Id6oitODgRq181slEED+BWxySV3WkOnVLf85n8fI53Gy2czlXX2KS/c2jKi91h/mmMqVM5zXPDpUbymHda0HgKi61t8GQgOT7VhRnjOCs81WBaV5cmGh2TbVebQ21XnaNxR9O971yGYH/6dXmHvqbuUBuj4JxeZ4sflohttBtz/oed2gN2weM71Bkynq8KtOuYzClOaO/aikWXuqro5q1eFo/WVtl3OHv651H41UW57XAN19z2sb/j2Bw9+3P66ZjwPf52kN+tE8FHr9Iz5TR3sLd+VzSlWPNxbn6gMCiYfBYIiBcXgL4/reqSqV0DT6EJpoiyTtTsfHne0GEWkYpEBmz+8NthuQpoGXen1YYYdB3G4YDIe9fme4y6Dfaxj4JB14Ow2iYdOgHQw7STvebpA2feiQ7tBLyI4Vgn7DoIsHw0G3t2OFYcPp5k74nMkfNpMHPk7cT/yqY1Ub+dUK8/dsCtXrNCvFNCrjz0Ru9KqRGkG/VkO2XfWeH6q/7TtqCscGiN8yF1AXREfz6F9VaRazMiHhDHykHMxrDETW31iNzyuzEx7OuZmiVhF5yWMSVqFsVnl9p52ny1VevHzE1vjpP3ipj24TIQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Loan Application V2.1 SO Approval">b025a5e653adda10335818b0a0490e97</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:43</sys_created_on>
+        <sys_id>8125a5e653adda10335818b0a0490ef8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 15:59:43</sys_updated_on>
+        <ui_id>db537c49-65e9-4c15-a57c-f8a5dc642f32</ui_id>
+        <values>H4sIAAAAAAAA/9WV227UMBCGX2WV680qp91ke4dYVUKCFrWFG4SiiT3uWjhOcJzSsuq7M06yp26PQJG4i8en+f+ZL/6y8iT3jryEZ5zPRRiIMAyDMJiGUZhhhgVLZylGmTf2NJRIKw2yynAaX4FqXWC1atpCqOrHROq6tdHtLU1y2dQKbj4PayjCllJxg9o7+vJ17NVg6DiLxjta3Zl6bj4KClS09Gyd0N0E7U3txrxibYna5nIdfD/sXAwzo3cLmqFNLp1w7OG1Rc2R8hCgGhx7JWgOtjI3m4hB4KdabQNLqW0vtITrRv6km+PIrRNIythgwmZ4AYXCRW9SPyUWYOHcmpbZ1mw8qyTDpveFo4BW2be7sX7BaW1lpfst1h087K5UW+qT3hVvc8BOTdoGc461E+uyp8tJiThfVj/O1okeS93ZMshUFQO1GYG1RhatdemsvFZe3Od4H77fc1TYLSyhrqW+zGtTXcnuPsq+nFwqGkxcb1GajbzUE2BO6oSqAZNjii+68Gcw0un+QMfQZnfnJy2/t/jO9RIPgzSeB8xPo2nsJwEDv8h44UMRiWmSzLJZEXq3Y6+5ad4qaJqtY1Su/HvrBPf+DU7lndmd03nXdG4zM7K2byi9Kxz8uR0PcGXhY80cR9ve3TlzC9h13miWqwp0swTzrek+c5KqJIOu8ge8PWfLy4B8hoY1kF1vP6BpYPIg9n537+iknxiIjF5IZN/G9wCZBf8ZkIO0Pydyz+99IPcc/yc8sqIoRIFzPywY85MUMz+LIPVxGrBYRHEQpOI3eHyKwuTxDt554nRlpdiCsuYwCdMQ5wn9RGbTKYRBHE+JiiKAIJkHyMUhhh8pe+Sjc9SyMqNTQYeiGb2pna2k4sWP4tMK1gye7Eu4X9gA4xaJfRbPduIDivHjKPbk/c7bSLXGK1dKLEGqvG+rR/i8o+8vs/pQNnsAgxDILPJcSFScejDv9rzKQyvOEQxbHrubXB17Wvdh3ysuIU93HMC+W9LXY/3isK8atPlgS+4OyEVlSnBd0Sm8+4tI5iGmcZT581lEvwiMp37B49gP6ZeBCCgi/jpP9tdf1hTQbRELAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Loan Application V2.1 SO Approval">b025a5e653adda10335818b0a0490e97</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:43</sys_created_on>
+        <sys_id>8125a5e653adda10335818b0a0490efb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 15:59:43</sys_updated_on>
+        <ui_id>5776c1f8-4fa2-4680-8ad1-1ce4b0921252</ui_id>
+        <values>H4sIAAAAAAAA/+1XW2/aMBj9K8jPlCUESuCtKuq0aRdprfpSqsixndabcTLbacci/vu+xM5l0DLYeKm6R38X53yHc2x8UyBO0QxNwmTIptOhF/ueF3heOCZeGLA4mJxOAkw81EcSLxlUKkZSRWH9gEVeBorCn0wTFuLpyXBIpiejMTk9Cf1xfHKK8RAngT9hNB6cY4NFete7wvrbeg39lOtM4NW12wYi5J4LqphEs5vbPsqwgi8aptCs2EjtC1ngmAko/VJj3pzBrLJyTVOSL5k0Ea+DH1zn3GV67+aQgaYSjtdH7IdhkjLAkWChWR8tsaTYpGqFZkblEFAM089SrJqKey6NnXOJf2j+Ez4cDMu6hMFgxHHQLK9wLNjccmRTyRwovITdiclVQ1nKCdOWFsoSnAtz3o3Zgs+Z4am0Labc2HWnIl/KT5YU1GzQ+UlyzSLKsnLWEr0dLbm8Tx+/1EAvuKxYcWOKlGDRrLAxise5KeEUiAlW0bzEWcblXZSp9IFXzQBlObgTsBgkIn2Eb2p+JweYlLgHwCweXEB8XoWvseLlEB9hG2he95Fe6XOBtW5HAR6j73mJxA7mRogqFiwFZR9RPDNn8JUH5jCv+84SMdmpL9LKyW7XOkKTyIDKtzXeJg6T+h5QaqlfOSwb0JzQq2VU5X7XedXW+2QTTub+bpm7SKtzK44nZB56L0zmbrQXr/M/Sdzzd+mKhq2OAAHMgEWUcCa6p3+d2BZ7J3OY2vdAVav9zH2jd+FgPQfX6b9aPqX/qn9D/8MD9f/8OR963kuzwGs66clOwbGg1dXXNFfyCRfATOW4OgJ5RI+p+hbJtGRiyxTPFx7mkT0g1x55bzFvWmRzlL9xSPDfIa/DIaPxTrl1/nA0Jy9JJeUlYt3xiT2vmT6Tq7c3RaENNpwMRmHiTwI6GgfMHw99LwjGoR/GHvZGU4/hYL2+3XbSv2x1mNf2GL55aOSiMvNOMpzTmqRyTV23NRdbvaNz3OhYT48XaLjX8q+M7NRbMm31RXMgCJvu26NYIAt7gWYLJFPJFqi/QGVVVAqsCkMFgGsSVawo1msbyRV2G/idZdtN8UpXlZrcMwr6rKK/RaLKEC5+jMf+HpzUHpznrDe3pGzT5LzX4LS88K3b7tIVVDu9ueLdW298tFtv9N+Cx7AgwORR89yAKw1OwSP68vYXoGHcmCUTAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Loan Application V2.1 SO Approval">b025a5e653adda10335818b0a0490e97</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:43</sys_created_on>
+        <sys_id>c125a5e653adda10335818b0a0490ef7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 15:59:43</sys_updated_on>
+        <ui_id>e111726b-c452-40f5-a667-91cf8acd3142</ui_id>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K8jPVZU0BUHfJiqkSQwkmHhhKLqxb1prjp3ZDtBV/e+7Tpw2KowViRe0PtX3y+ec3JPcr5kUbMamKJL0LD3hWZplkySZnE7T4iQr0onIADFlI6ahQqq0yI0VdH4E1YTAeu2aolTmaSx13fjJZkNJIV2tYHUXayjCl1IJi5rN7h9GrAZL4zxaNlvvpQ7Fo6BARaU3PaB9gH5Vh7MwvKlQ+1z2wcvYOY+Zo69zylBTgJMmI4bPHrVAAlKCcjhiFWgB3tgVm3nbUMAiiGutVtuKpdS+I1rBs5O/6eZpEupKJGY8irA9fodC4bwTqUuVc/BwS9O5b+xWMyM5uk4XgSU0yp8PY13Bde2l0V2LD4Njt1FNpa86Vdh2wOCZNA5zgXXgGtB31MrbpXm66YFeSN3KEmkqw0FtT+C9lUXjA5w1Q4WtzhXUtdSLvLbmUbbNBKUaLxQdxmFR6E4nF3oMPOAek7IwvqD4vA3fgZWBxDcaQ82bEXMrd67AuR0V0jH/1QQkHbFIIW9VaCXI220IzdzK2n+hqx4xAt+M4tYXx29tGT/bLdVg5m7zn3Onea4MaLcE+9O1f3OCrSSH9pG8MMIhLe9zygEceqe0S/cXTtEsL2KXw96jqy4RrXL8YVY5/WxWiVQ+vVf+5ZBk8uZ7eLBNrSncwB0OtTQ2N2VJutuw48QR1I8mSTLRnVC8dMihbe9zyQE8epdcSFTCvUKstwhWhNdj3hHds0lMHt3F5Par8mFeSU+S9vfJHPPffFwe/gAxBNnLVAkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Loan Application V2.1 SO Approval">b025a5e653adda10335818b0a0490e97</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:43</sys_created_on>
+        <sys_id>c925a5e653adda10335818b0a0490ef6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 15:59:43</sys_updated_on>
+        <ui_id>3ca755d7-eebf-4840-a756-d76be46fcb67</ui_id>
+        <values>H4sIAAAAAAAA/+VVTW8bNxD9KwSPrrretRwjUU5GVKMF0hiICl+iZMFdzkpsuOSWH7ZVQf+9w4+VBTtxHMAXo74YnOHMvPf4RvtpSwWnM3oKvKzeVGfttJpOT8ry5PVp1ZxNm+qETxlARSdUsR7wpoFWG47nayZ9CGy31jed1DeFUIN31W6HSS7sINnmKt/BSLsWkhtQdPbp84QOzGA7B4bOtvdST8UjWQMSr34cAd0H6DZDOHPd+h6Uq8UYfJ8r5zlD/phjBosCnKqcULh1oDggkI5JCxPaM8WZ02ZDZ854DBhg/FLJzf7GWiiXiPbs1op/cfJpGe51gMzaLML++BdrJMyTSCnVzZljC+zeOm/2mmnRgk26cOiYl+7dYSxduByc0CqVuNA4V2vpe/UhqUL3DQ7exFuoOQyBa0CfqHWLtb75OAK9ECrKkmlK3TK5PzHnjGi8C3C2FCREnXs2DEKt6sHoaxGLEUpfrCQeimAUnGnFShWsDbgLVJYVFxifx/AVMyKQ+BPbYPFuQu3GvpPM2jsqqGP9jw9IErFMoY4qRAnq6IZQ3BoxuHMcdQ0Z+G6SXd+8esxl7Zs7Ux30vHO+bWvH7NeHdr9L/Jzrn4BndH000HfwZeM/iL0/rCUfUiLb/tWz2f71S7N9pvLiff8jt5cnj/6mHrgpGtweOB0hISkml74spzydgH+xjjlIsekX5BpksDWapr7R5mutNCqU0h3/NUED/nBdnrn7z+3cE1QZd+5CgOT2GzKNCwc90nJQJ9nuLV1Okquc3H9vnm3zqrMy/r2w/fsffHYSxRSLPvy2m0PqsUJ6fLRUR0fnLb6EJQH78XkkQwIZ4i3yJ24NpON1jOjmb2hdQRaxAem9dcQAvrQijESXFiR0vAxeJMr3Df4Tluius+BIsyG/VEQo8psx2pDfEa0MIxaQJIxgrpmQ8YOiox8sydtN/IDABoNQQ82SFktKWIebOMIL5XDLcC9ghmgMsWttHD5HS9JejxcLfO/VCkzReoP2cEW8GN4z8sKpb0OvzGzfJQSPl2qpQu8ecbAVjJ2XdAFKICmkil42ZPzZIVIzFU5StCxqi6yDJkrfkLCFG9JhGZJsvLHRekuKk/LwPOYt+sMybLe3/W63+/wfctMEcW4LAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Loan Application V2.1 SO Approval">b025a5e653adda10335818b0a0490e97</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:43</sys_created_on>
+        <sys_id>c925a5e653adda10335818b0a0490ef8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 15:59:43</sys_updated_on>
+        <ui_id>e523f455-e786-4628-a300-55159695313d</ui_id>
+        <values>H4sIAAAAAAAA/9WV207jMBCGX6XKdVPl2KbcISokJBZWlOUGoWhij6m1zoHEKXSrvvvaSdo0bSmHXVbaS49P//wzn32/NDg1TgyPBpSOmW0x27Yt2/Jtxw4wwIiMhiN0AqNvJBCjWpkjSXOqxnMQpQ4sl0UZMZE+D3iSldJerdQk5UUmYHHXrFERMuOC5pgYJ/cPfSODXB0nMTdOljtT79UjIEKhlt6sBe0KlItMj2lKyhgTGfJ18LLZOWlmehcTNaM2aTl238AXiQlFpYOBKLBvxJBQkGm+2ERyBHqdiDYw44msE43hpeC/1M2uo9cxVJmRxoTN8BYigZPapHqKTUDCVOYlkWW+8SzlBIvaF4oMSiHPtmP1gutM8jSpt0h9cLM7FWWcXNWuGJsDtmpSFhhSzHSyWr26XGXCprP0+WYt9JwnlS1NmiIlIDYjkDLnUSm1nKVR8ttDjtfhw56jwGphDFnGk8cwy9M5r+5T6uPBo1CDge4tJbPgj8kAiE51oKoBg3MVn1ThO8i5zvubOkZt1nf+SPhTiRe6l6htjdyxRcyR47umZxEwo4BGJkQO8z1vGAwj21j1jWJRnAkoitYxVa7wqdQJ1/41ToWV2ZXTYdV0ejPJeSZPlbw5Nv6s+g1cgX2smV2n7d2tM1vAChJKKH7uU9VOfAyud+hZw1X16Sv6Gr72Ypfbe3tX9URDl/NBuuqWPABXYP1ncDWp/TldHb+7cHUc/ydskSiKWIRj044IMb0RBmbgwMhE3yIuc1zLGrFPsPUWUd7xDt76rpJUcsYJVEVsmQrAZb5P0Hcd3wfbcl1fURFZYHljC5m1D9v0tPddJaCc7F2mkPROs0y0537wd3tb/hrAq67+w1k1JLY8dEG82Yo3HLrHOayx+8wnpwqNc11HjIGLsO6pI3Du5PeXQX1NTYdeYAyJRBoyjoKqBgyrPV/yY7IpQk5m5/omXcca1S7pneIq3tUde6Rvl/TrQL/d76sCZdjYEuoDQpbmMeiuqDLcfR+8sY0j1wnM8dBR7wO6vhlR1zVt9V4gAjKHfs3f+/AbGb7LrdoKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=b025a5e653adda10335818b0a0490e97"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=b025a5e653adda10335818b0a0490e97^sys_idNOT IN0925a5e653adda10335818b0a0490ef5"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b825a5e653adda10335818b0a0490e63</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Loan Application V2.1 SO Approval">b025a5e653adda10335818b0a0490e97</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned>output1,output2,output3,output4</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:43</sys_created_on>
+        <sys_id>0925a5e653adda10335818b0a0490ef5</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 02:42:59</sys_updated_on>
+        <ui_id>e2d41476-841f-4de7-a369-7a750af995e5</ui_id>
+        <values>H4sIAAAAAAAA/+1X227bOBD9lUDPpiFSlETlrYgRIEC3BZpsXxaFMLwoEUJLqi5JvYb/fYeWLF/iNFnEKXYX+2aOyOE5Z+aQ9NIru7bq2uam/NA0+W3hnf+x9HLtnXsRZyGEJgoD0BqoHwShoEL64PPEN5x6E6+AucGZfQoXeADbuchySeMkMwISwphKCA9VRAQNJYkAGGQBjY2W0wtowZa3ZzfQ3E91Z1INrVmtMJHOm8rC4uup8qm73OraOHrfJl4FNSJvTe2dI9kCfxRgP+bFPW71ZPJrxbAgjcWpLE5VbXDjVPVw0hbhpBs4x2RrF5ULNG2dF7fD+OOQ7noTLGvtANOJZ360ptAGcWVgGzPx5lBg6rJeeOdt3WEA99efC7sYZ9why57cHH40+Z+4nfB9383MDFJVpv86Dm9AWjPrq9B/ymZIB9F0qu1qs1GqzJVpeqG0yaCz7cVurJ/wuWrzsuiXtC7xsLq03bz41KvhjQk2RcdI16BopnJsHf6BTHZ9Vz5+2SC9zIu1MMNHWyqw4whalE92rcOz9Lr85kDpPvJEa2PNHHdM51BVGEmrunzI17sg6Pn01uJgmtnyEdE510xBOYZTrAJMLzE+W4e/Qp07ur9hGlzstvu9yL935sr1lAkM01RQwrIYCKeaEgDNiJAyEKBFnAjqrSZes2guLDTNViisUvq9czR72QaB0l5jt0TVedV+QFAPZtBiNRl8zX7eyuFhg7I9X4dxHCmaCcIzYIRHwieIlRKqDJd+wigL2RTpomBg06Z91tCvS3QC676C72hdkTqrZmWdjhT2uRwTZ3Bv3+oH7r3YBAf3slO5l5/Qu8tRAELOPpWFOSNkp+hb9P7qmM1fvZyunp4I9J9yJIzl2z8SxgL+kiMhMoGvY9BEiAhvuTg0RCoWkTgKlZ9ILrkSv/5IgMOuD9521R87EN7f6PDyHb07OMZ5cPrWd/tm/7ITH1o+OJXfA7bv90ZtUD5n+13F/63Xd3ZtoFZ3l7mxrsJFN5dr0zzj4d3C7Nt4VqrO2ffsavaOXnZXRK5mW8Y7Zdq/+qlkEQNBlJaacElDAr7mJPFlSBPsYT8K3sPn4qcO0Yc9z9/4pIf1X4q11Ld12VWnetofzfvm4+NlcV44Pg5hHZPz7zz1+f9P/f/IU59xGUklEhJp4IQHTBCZGUq0kJTzRFMWqRP63bV04f7V95V5GLCNxVN5gxTWdb/amacX2K652g09lvW9I7+Nrf4C6jAiTzMQAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b025a5e653adda10335818b0a0490e97"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=b025a5e653adda10335818b0a0490e97"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_b025a5e653adda10335818b0a0490e97^sys_idNOT IN0125a5e653adda10335818b0a0490ebd,0525a5e653adda10335818b0a0490eb6,4525a5e653adda10335818b0a0490ed0"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>input2</element>
+        <help/>
+        <hint/>
+        <label>3_create_record_record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b025a5e653adda10335818b0a0490e97</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:43</sys_created_on>
+        <sys_id>0125a5e653adda10335818b0a0490ebd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 15:59:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>input1</element>
+        <help/>
+        <hint/>
+        <label>21_loan_application_v2_1_lgo_approval_output2</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b025a5e653adda10335818b0a0490e97</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:43</sys_created_on>
+        <sys_id>0525a5e653adda10335818b0a0490eb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 15:59:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>input3</element>
+        <help/>
+        <hint/>
+        <label>trigger_request_item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b025a5e653adda10335818b0a0490e97</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:43</sys_created_on>
+        <sys_id>4525a5e653adda10335818b0a0490ed0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 15:59:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b025a5e653adda10335818b0a0490e97"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_b025a5e653adda10335818b0a0490e97^sys_idNOT IN0125a5e653adda10335818b0a0490ed9,0d25a5e653adda10335818b0a0490ee8,0d25a5e653adda10335818b0a0490eef,8925a5e653adda10335818b0a0490ee1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output1</element>
+        <help/>
+        <hint/>
+        <label>27_create_catalog_task_due_date</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_b025a5e653adda10335818b0a0490e97</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:43</sys_created_on>
+        <sys_id>0125a5e653adda10335818b0a0490ed9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 15:59:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output3</element>
+        <help/>
+        <hint/>
+        <label>27_create_catalog_task_catalog_task</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_b025a5e653adda10335818b0a0490e97</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:43</sys_created_on>
+        <sys_id>0d25a5e653adda10335818b0a0490ee8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 15:59:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output4</element>
+        <help/>
+        <hint/>
+        <label>27_create_catalog_task_assignment_group</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_b025a5e653adda10335818b0a0490e97</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:43</sys_created_on>
+        <sys_id>0d25a5e653adda10335818b0a0490eef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 15:59:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>output2</element>
+        <help/>
+        <hint/>
+        <label>28_ask_for_approval_approval_state</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_b025a5e653adda10335818b0a0490e97</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:43</sys_created_on>
+        <sys_id>8925a5e653adda10335818b0a0490ee1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-01 15:59:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b025a5e653adda10335818b0a0490e97^sys_idNOT IN0d25a5e653adda10335818b0a0490ede"/>
+    <sys_choice field="output2" table="var__m_sys_hub_flow_output_b025a5e653adda10335818b0a0490e97">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>output2</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_b025a5e653adda10335818b0a0490e97</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-11-01 15:59:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0d25a5e653adda10335818b0a0490ede</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-11-01 15:59:43</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>2c25ada253adda10335818b0a0490e64</sys_id>
+        <latest_snapshot>b025a5e653adda10335818b0a0490e97</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch1-hotfix2a-10-05-2024_10-18-2024_1248.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=2c25ada253adda10335818b0a0490e64"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=2c25ada253adda10335818b0a0490e64^sys_idNOT IN9925e5e653adda10335818b0a0490e2e"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"9925e5e653adda10335818b0a0490e2e","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="Loan Application V2.1 SO Approval">2c25ada253adda10335818b0a0490e64</plan_id>
+        <snapshot>231d3fe653a91e10335818b0a0490e7d</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-01 15:59:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9925e5e653adda10335818b0a0490e2e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-02 02:42:59</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>
