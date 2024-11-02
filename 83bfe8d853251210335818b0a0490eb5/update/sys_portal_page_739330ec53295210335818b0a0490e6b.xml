@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2024-11-02 04:56:51">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout display_value="layout_2_across">f6defafa0a0a0b12000d5016bd12ff06</layout>
+        <order/>
+        <read_roles/>
+        <roles/>
+        <selectable>false</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-26 07:15:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>739330ec53295210335818b0a0490e6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>catalog_loansharks_catalog</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name>sys_portal_page_739330ec53295210335818b0a0490e6b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-26 07:15:31</sys_updated_on>
+        <title>catalog_loansharks_catalog</title>
+        <user/>
+        <view>catalog_loansharks_catalog</view>
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone0</dropzone>
+                <offset>0</offset>
+                <page display_value="catalog_loansharks_catalog">739330ec53295210335818b0a0490e6b</page>
+                <summary/>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2024-10-26 07:23:29</sys_created_on>
+                <sys_id>e475b46053695210335818b0a0490e5b</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2024-10-26 07:23:29</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>render_title</name>
+                        <portal_section display_value="Created 2024-10-26 00:23:29">e475b46053695210335818b0a0490e5b</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-10-26 07:23:29</sys_created_on>
+                        <sys_id>6075b46053695210335818b0a0490e5c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-10-26 07:23:29</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_link</name>
+                        <portal_section display_value="Created 2024-10-26 00:23:29">e475b46053695210335818b0a0490e5b</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-10-26 07:23:29</sys_created_on>
+                        <sys_id>6075b46053695210335818b0a0490e5d</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-10-26 07:23:29</sys_updated_on>
+                        <value>com.glideapp.servicecatalog_category_view.do?v=1&amp;amp;sysparm_parent=ca94b82053695210335818b0a0490e22&amp;amp;sysparm_catalog=6b73306c53295210335818b0a0490e55&amp;amp;sysparm_catalog_view=catalog_loansharks_catalog</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>catalog_view</name>
+                        <portal_section display_value="Created 2024-10-26 00:23:29">e475b46053695210335818b0a0490e5b</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-10-26 07:23:29</sys_created_on>
+                        <sys_id>6075bc6053695210335818b0a0490e56</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-10-26 07:23:29</sys_updated_on>
+                        <value>catalog_loansharks_catalog</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>fromHome</name>
+                        <portal_section display_value="Created 2024-10-26 00:23:29">e475b46053695210335818b0a0490e5b</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-10-26 07:23:29</sys_created_on>
+                        <sys_id>6475b46053695210335818b0a0490e5c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-10-26 07:23:29</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2024-10-26 00:23:29">e475b46053695210335818b0a0490e5b</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-10-26 07:23:29</sys_created_on>
+                        <sys_id>6475b46053695210335818b0a0490e5d</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-10-26 07:23:29</sys_updated_on>
+                        <value>Loan Management Services</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 2024-10-26 00:23:29">e475b46053695210335818b0a0490e5b</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-10-26 07:23:29</sys_created_on>
+                        <sys_id>6475bc6053695210335818b0a0490e56</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-10-26 07:23:29</sys_updated_on>
+                        <value>739330ec53295210335818b0a0490e6b</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>macro</name>
+                        <portal_section display_value="Created 2024-10-26 00:23:29">e475b46053695210335818b0a0490e5b</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-10-26 07:23:29</sys_created_on>
+                        <sys_id>6875b46053695210335818b0a0490e5b</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-10-26 07:23:29</sys_updated_on>
+                        <value>sc_catalog_homepage_category_item</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>catalog</name>
+                        <portal_section display_value="Created 2024-10-26 00:23:29">e475b46053695210335818b0a0490e5b</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-10-26 07:23:29</sys_created_on>
+                        <sys_id>6875b46053695210335818b0a0490e5c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-10-26 07:23:29</sys_updated_on>
+                        <value>6b73306c53295210335818b0a0490e55</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2024-10-26 00:23:29">e475b46053695210335818b0a0490e5b</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-10-26 07:23:29</sys_created_on>
+                        <sys_id>6c75b46053695210335818b0a0490e5b</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-10-26 07:23:29</sys_updated_on>
+                        <value>com.glideapp.servicecatalog.RenderCategory</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_link_class</name>
+                        <portal_section display_value="Created 2024-10-26 00:23:29">e475b46053695210335818b0a0490e5b</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-10-26 07:23:29</sys_created_on>
+                        <sys_id>6c75b46053695210335818b0a0490e5c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-10-26 07:23:29</sys_updated_on>
+                        <value>category_title_link</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 2024-10-26 00:23:29">e475b46053695210335818b0a0490e5b</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-10-26 07:23:29</sys_created_on>
+                        <sys_id>e475bc6053695210335818b0a0490e55</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-10-26 07:23:29</sys_updated_on>
+                        <value>category</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2024-10-26 00:23:29">e475b46053695210335818b0a0490e5b</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2024-10-26 07:23:29</sys_created_on>
+                        <sys_id>e875bc6053695210335818b0a0490e55</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2024-10-26 07:23:29</sys_updated_on>
+                        <value>ca94b82053695210335818b0a0490e22</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal_page>
+</record_update>

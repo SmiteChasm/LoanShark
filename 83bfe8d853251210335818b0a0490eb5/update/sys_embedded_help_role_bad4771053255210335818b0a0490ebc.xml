@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role/>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-26 02:41:17</sys_created_on>
+        <sys_id>bad4771053255210335818b0a0490ebc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>0bb4bfdc53e15210335818b0a0490ea7</sys_name>
+        <sys_package display_value="LoanSharks" source="x_snc_loansharks">83bfe8d853251210335818b0a0490eb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LoanSharks">83bfe8d853251210335818b0a0490eb5</sys_scope>
+        <sys_update_name>sys_embedded_help_role_bad4771053255210335818b0a0490ebc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-26 02:41:17</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>
